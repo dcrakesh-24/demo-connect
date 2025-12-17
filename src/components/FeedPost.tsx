@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { MoreHorizontal, ThumbsUp, MessageCircle, Repeat2, Send, Globe } from "lucide-react";
+import { MoreHorizontal, ThumbsUp, MessageCircle, Repeat2, Send, Globe, Sparkles } from "lucide-react";
 
 interface FeedPostProps {
   author: {
@@ -14,6 +15,8 @@ interface FeedPostProps {
   likes: number;
   comments: number;
   reposts: number;
+  isSponsored?: boolean;
+  companyId?: string;
 }
 
 export const FeedPost = ({
@@ -24,21 +27,51 @@ export const FeedPost = ({
   likes,
   comments,
   reposts,
+  isSponsored,
+  companyId,
 }: FeedPostProps) => {
+  const AuthorName = companyId ? (
+    <Link 
+      to={`/company/${companyId}`}
+      className="font-semibold text-sm text-foreground hover:text-primary hover:underline"
+    >
+      {author.name}
+    </Link>
+  ) : (
+    <h3 className="font-semibold text-sm text-foreground hover:text-primary hover:underline cursor-pointer">
+      {author.name}
+    </h3>
+  );
+
   return (
     <article className="linkedin-card animate-fade-in">
+      {/* Sponsored badge */}
+      {isSponsored && (
+        <div className="px-4 pt-2 flex items-center gap-1 text-xs text-muted-foreground">
+          <Sparkles className="h-3 w-3" />
+          <span>Promoted</span>
+        </div>
+      )}
+      
       {/* Header */}
       <div className="p-4 pb-0">
         <div className="flex justify-between items-start">
           <div className="flex gap-2">
-            <Avatar className="h-12 w-12">
-              <AvatarImage src={author.avatar} />
-              <AvatarFallback>{author.initials}</AvatarFallback>
-            </Avatar>
+            {companyId ? (
+              <Link to={`/company/${companyId}`}>
+                <Avatar className="h-12 w-12 bg-card">
+                  <AvatarImage src={author.avatar} className="object-contain p-1" />
+                  <AvatarFallback>{author.initials}</AvatarFallback>
+                </Avatar>
+              </Link>
+            ) : (
+              <Avatar className="h-12 w-12">
+                <AvatarImage src={author.avatar} />
+                <AvatarFallback>{author.initials}</AvatarFallback>
+              </Avatar>
+            )}
             <div>
-              <h3 className="font-semibold text-sm text-foreground hover:text-primary hover:underline cursor-pointer">
-                {author.name}
-              </h3>
+              {AuthorName}
               <p className="text-xs text-muted-foreground line-clamp-1">
                 {author.title}
               </p>
