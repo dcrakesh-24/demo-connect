@@ -151,7 +151,7 @@
     height: 28rem;
     margin: auto;
     background-position: center;
-    background-size: 28rem;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;

@@ -151,11 +151,8 @@
     height: 28rem;
     margin: auto;
     background-position: center;
-    background-size: 28rem;
+    background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
   }
 }
