@@ -1,6 +1,18 @@
-import { Search, Home, Users, Briefcase, MessageSquare, Bell, Grid3X3 } from "lucide-react";
+import { Search, Home, Users, Briefcase, MessageSquare, Bell, Grid3X3, ChevronDown } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { companies } from "@/data/companies";
+
+interface NavbarProps {
+  selectedCompany?: string | null;
+  onCompanySelect?: (companyId: string | null) => void;
+}
 
 const navItems = [
   { icon: Home, label: "Home", active: true },
@@ -10,7 +22,9 @@ const navItems = [
   { icon: Bell, label: "Notifications" },
 ];
 
-export const Navbar = () => {
+export const Navbar = ({ selectedCompany, onCompanySelect }: NavbarProps) => {
+  const currentCompany = companies.find((c) => c.id === selectedCompany);
+
   return (
     <nav className="sticky top-0 z-50 bg-card border-b border-border">
       <div className="max-w-[1128px] mx-auto px-4 h-[52px] flex items-center justify-between">
@@ -44,6 +58,47 @@ export const Navbar = () => {
             </button>
           ))}
 
+          {/* Company selector dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="flex flex-col items-center justify-center min-w-[100px] h-[52px] px-2 linkedin-hover text-muted-foreground hover:text-foreground border-l border-border">
+                {currentCompany ? (
+                  <Avatar className="h-6 w-6 bg-card">
+                    <AvatarImage src={currentCompany.logo} className="object-contain p-0.5" />
+                    <AvatarFallback className="text-[8px]">{currentCompany.initials}</AvatarFallback>
+                  </Avatar>
+                ) : (
+                  <Grid3X3 className="h-5 w-5" />
+                )}
+                <span className="text-xs mt-0.5 hidden md:flex items-center gap-0.5">
+                  {currentCompany ? currentCompany.name.split(" ")[0] : "Companies"} <ChevronDown className="h-3 w-3" />
+                </span>
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuItem
+                onClick={() => onCompanySelect?.(null)}
+                className={!selectedCompany ? "bg-accent" : ""}
+              >
+                <Grid3X3 className="h-4 w-4 mr-2" />
+                All Companies
+              </DropdownMenuItem>
+              {companies.map((company) => (
+                <DropdownMenuItem
+                  key={company.id}
+                  onClick={() => onCompanySelect?.(company.id)}
+                  className={selectedCompany === company.id ? "bg-accent" : ""}
+                >
+                  <Avatar className="h-5 w-5 mr-2 bg-card">
+                    <AvatarImage src={company.logo} className="object-contain p-0.5" />
+                    <AvatarFallback className="text-[8px]">{company.initials}</AvatarFallback>
+                  </Avatar>
+                  {company.name}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+
           {/* Profile dropdown */}
           <button className="flex flex-col items-center justify-center min-w-[80px] h-[52px] px-2 linkedin-hover text-muted-foreground hover:text-foreground">
             <Avatar className="h-6 w-6">
@@ -54,14 +109,6 @@ export const Navbar = () => {
               Me <span className="text-[10px]">▼</span>
             </span>
           </button>
-
-          {/* Work dropdown */}
-          <div className="hidden lg:flex flex-col items-center justify-center min-w-[60px] h-[52px] px-2 border-l border-border linkedin-hover text-muted-foreground hover:text-foreground cursor-pointer">
-            <Grid3X3 className="h-5 w-5" />
-            <span className="text-xs mt-0.5 flex items-center gap-0.5">
-              Work <span className="text-[10px]">▼</span>
-            </span>
-          </div>
         </div>
       </div>
     </nav>
