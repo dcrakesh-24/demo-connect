@@ -7,30 +7,39 @@ import { CaseStudiesSection } from "@/components/landing/CaseStudiesSection";
 import { MarketingSection } from "@/components/landing/MarketingSection";
 import { BlogSection } from "@/components/landing/BlogSection";
 import { LandingFooter } from "@/components/landing/LandingFooter";
-import { loadTemplate1Data } from "@/data/landing/template1Csv";
+import { loadTemplate3Data, clearTemplate3Cache } from "@/data/landing/template3Csv";
 import type { LandingPageData } from "@/data/landing/template1";
 
 /**
- * Landing Page Template 1
+ * Landing Page Template 3
  * 
- * This is the first template for landing pages.
+ * This template is identical to Template1 in structure but uses its own CSV configuration.
+ * All data, colors, logos, and text are configurable via template3-config.csv.
+ * 
  * Data is loaded from CSV file for easy configuration.
  */
-const Template1 = () => {
+const Template3 = () => {
   const [data, setData] = useState<LandingPageData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    loadTemplate1Data()
-      .then((loadedData) => {
+    // Clear cache on mount to ensure fresh data from CSV
+    clearTemplate3Cache();
+    
+    const loadData = async () => {
+      try {
+        // Force reload by clearing cache
+        const loadedData = await loadTemplate3Data(true);
         setData(loadedData);
         setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Unknown error');
         setLoading(false);
-      });
+      }
+    };
+    
+    loadData();
   }, []);
 
   if (loading) {
@@ -115,5 +124,5 @@ const Template1 = () => {
   );
 };
 
-export default Template1;
+export default Template3;
 

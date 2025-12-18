@@ -1,0 +1,102 @@
+section,field,value,type
+header,userName,Raghav,string
+header,logoUrl,https://img.pikbest.com/png-images/20241022/stealth-masked-hacker-gaming-logo-for-gamers_10991543.png!w700wp,string
+header,logoAlt,Logo,string
+header,backgroundColor,#FFFFFF,color
+header,textColor,#000000,color
+header,learnMoreButtonText,Learn more,string
+header,learnMoreButtonLink,#,string
+header,bookCallButtonText,Book a call,string
+header,bookCallButtonLink,#,string
+hero,primaryLogoUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/logo.png?ts=1749725821,string
+hero,primaryLogoAlt,Primary Logo,string
+hero,secondaryLogoUrl,https://png.pngtree.com/png-clipart/20190516/original/pngtree-human-character-with-green-tree-logo.-png-image_3732560.jpg,string
+hero,secondaryLogoAlt,Secondary Logo,string
+hero,greeting,"Hey Raghav, great to chat\nto you again yesterday,\nscroll down for next\nsteps!",string
+hero,description,Roll out the red carpet for your target accounts with scalable 1:1 personalisation and contact/account level tracking.,string
+hero,graphicImageUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/GIF-_rolling_red_carpet.gif?ts=1736775115&Expires=1766072787&Key-Pair-Id=K1ZIOQWY1IQPUD&Signature=w6ZxoHn8X-lOPY8O04B-dOj~X6A6shZ1HgXbuq203fcOoJqDxPqGq3lq8820UFYRQ~abPsYORFB~QpZOCFLLmTfd2gRCxSPZyff~hADqWEFQA8vorRfX4SxY-iyWmfYRz-Jf4Cpuu8eweidedJHXz6w54FklfEObk3FlZi6Uo7B~L0OWcdQPmLgA8QlcfJBskAzdcN-YAkoT9Nqc7wDnFWMBXlkuPjY7MBdeWeNHn4LQmUSmbdv7B6J-ckzO~VNkXMnLn7DBgVvhqdiYo0p~Y8ezoRZnu9HShDLYL~4hTe0kW35witDoJySHM~FZbT~HnpcfaUUrHsBz-ePK7zABRQ__,string
+hero,backgroundColor,#000000,color
+hero,textColor,#FFFFFF,color
+hero,greetingFontSize,48px,string
+hero,greetingLineHeight,1.25,string
+hero,greetingFontFamily,Aeonik,string
+hero,greetingFontWeight,700,string
+usefulInfo,title,Useful Information,string
+usefulInfo,backgroundColor,#FFFFFF,color
+usefulInfo,textColor,#000000,color
+usefulInfo,card1_id,1,string
+usefulInfo,card1_title,On-Demand Demos,string
+usefulInfo,card1_type,Most popular,string
+usefulInfo,card1_imageUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/thumbnails/26a658c7-fec9-4401-8d49-a76997e97332.jpg?ts=1756806071&Expires=1766072785&Key-Pair-Id=K1ZIOQWY1IQPUD&Signature=2la4-MG9LUC08R3a12aC3P0HniF1w5lewwOQNYHNoEaNkRE-XobyxGVRI2PJGoBoqoGcX7esW1UeXkj0xNF1ghA5MFAPgCv-vOmuB8lJqa5rIghvoOW3rkW1fTkY1HpFK-urU9Aieh-uyYpgw6J0Ym1b3BOCo--FnoUiikdhq21WN7XTK3MMmblIRG3SNnrNIs~HTd35u8gxqpFiaNjC-BTfEy1mlsijyyc0-FiW~KfpkaP76bYcRukeWcQZEt6tD9pE52xvTnr6ZTP5bIUbUNMLQ80UvWMDqLCpiZpl4uDxBBbRjFBWEAoKh2RqqYb6Y1evYcheO4zZDpgtajnN9A__,string
+usefulInfo,card1_label,On-Demand Demos,string
+usefulInfo,card1_icon,U,string
+usefulInfo,card2_id,2,string
+usefulInfo,card2_title,Sami-Sabinsa Group Platform Walkthrough,string
+usefulInfo,card2_type,PDF,string
+usefulInfo,card2_imageUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/thumbnails/9482aa6e-66c8-4ada-b527-277063ec14af.jpg?ts=1744620969&Expires=1766072785&Key-Pair-Id=K1ZIOQWY1IQPUD&Signature=0N4G-S9xWVdu3wOtxxH6NQADV6rzeGHbV311m5An3--WNI1AdgtupwAmpraOYP5KzEHMbgJFH9RTR7HnE5YUTy64Ee2KWi0Z61XS77Be6m8NfmF~BPIgHctuxDhCWo53oylz4u4dhxDFSLiHgD3OENGMyJ0raqiTS9PETKBoQAebPpEQsl95ex9NwVLX47o5vAeDymFchkefZlCcoXwlA722QL9foC4kC3qOFr7LZ78MCmIqxzUMQT62znUXHBaMG95MkrrgKgRreNchfXPwDPSvRaOge7AJQRaQ9t51gJayZdmaDpl7mgdDP0cDtBVNte~Ft3u6cUFvwCZHd72KwQ__,string
+usefulInfo,card2_label,Sami-Sabinsa_(2).pdf,string
+usefulInfo,card2_icon,📄,string
+usefulInfo,card3_id,3,string
+usefulInfo,card3_title,Sami-Sabinsa Group x Pfizer Landing Page,string
+usefulInfo,card3_type,Landing Page,string
+usefulInfo,card3_imageUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/thumbnails/acc5206b-756c-4fc9-b6d3-6351fe7a5998.png?ts=1756806024&Expires=1766072785&Key-Pair-Id=K1ZIOQWY1IQPUD&Signature=Bpf4tVaLYtvwq39S93uTMuQzjPYYI7DFCRJ1qn1dhqfseDq4Cy3y-I71VqBNfMQNmrbBa7gjIJqC9TFC0KAgbDZZnfjnp0eg7-tIO1fsFBmBEyMalfOFxSK~3fs~jfrR8NKrNPA0CGKoHDoaHNPDJC1QJy8m~-Jtinyjlm4tiSgzaMbgSkt~Lrt2doB4BXxy8wedTPWY54V8-KqnfhK5ETh8ZvqSQ2swcVNw5qH5KDMR~9dkzyyueKSfCf3MV~30K46GLJktC6eSf6XvyvG1uaY-EDYQX7Ug-QLcjxKBm7lA9S7hrWiiIRsC~m6bhAIu5Ai0dHAkYY~SJxlowTgjPA__,string
+usefulInfo,card3_label,Sami-Sabinsa Group x Pfizer Landing Page,string
+usefulInfo,card3_icon,U,string
+usefulInfo,card4_id,4,string
+usefulInfo,card4_title,HubSpot Integration Guide,string
+usefulInfo,card4_type,PDF,string
+usefulInfo,card4_imageUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/thumbnails/26a658c7-fec9-4401-8d49-a76997e97332.jpg?ts=1756806071&Expires=1766072785&Key-Pair-Id=K1ZIOQWY1IQPUD&Signature=2la4-MG9LUC08R3a12aC3P0HniF1w5lewwOQNYHNoEaNkRE-XobyxGVRI2PJGoBoqoGcX7esW1UeXkj0xNF1ghA5MFAPgCv-vOmuB8lJqa5rIghvoOW3rkW1fTkY1HpFK-urU9Aieh-uyYpgw6J0Ym1b3BOCo--FnoUiikdhq21WN7XTK3MMmblIRG3SNnrNIs~HTd35u8gxqpFiaNjC-BTfEy1mlsijyyc0-FiW~KfpkaP76bYcRukeWcQZEt6tD9pE52xvTnr6ZTP5bIUbUNMLQ80UvWMDqLCpiZpl4uDxBBbRjFBWEAoKh2RqqYb6Y1evYcheO4zZDpgtajnN9A__,string
+usefulInfo,card4_label,Hubspot_Integration.pdf,string
+usefulInfo,card4_icon,📄,string
+usefulInfo,card5_id,5,string
+usefulInfo,card5_title,Product Overview Video,string
+usefulInfo,card5_type,Video,string
+usefulInfo,card5_imageUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/thumbnails/e4c42c50-9aa4-4ee0-9741-311f80060676.png?ts=1743432025&Expires=1766072785&Key-Pair-Id=K1ZIOQWY1IQPUD&Signature=qGdJ5iANOHRqq4cFTaQqXqJB~6vVuxQddv7-m1fwXMsEoOwwbSMLcobYYiLkvZu83yo8n8KZQRryW8FR9hedKirwD4jwwPqDeIz~4eQsmtaZdHXnT0fweH0Sk2-LwLkm0DFzX2pFeBMR0CQ5a9aKD0wd9CZ93Nf2HDRymSu8Shctjb5VuYEJR-8qlh-Hd9x8yuJ3yCMnL8IvFFhuGD0DMV9Mk90wcvI6jcfWl0t0H~wKnnp3SnFPn2Z6br6gVFDq4VDNqSMwIhPoFdpzbHsMyxR-9jdITptABSpp2mcdGAClUd9syK-hx6M3OeSjHVZUJjUv841OZak-SyzivsJOlA__,string
+usefulInfo,card5_label,Product Overview,string
+usefulInfo,card5_icon,▶,string
+usefulInfo,card6_id,6,string
+usefulInfo,card6_title,Case Study: Enterprise Success,string
+usefulInfo,card6_type,PDF,string
+usefulInfo,card6_imageUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/thumbnails/9482aa6e-66c8-4ada-b527-277063ec14af.jpg?ts=1744620969&Expires=1766072785&Key-Pair-Id=K1ZIOQWY1IQPUD&Signature=0N4G-S9xWVdu3wOtxxH6NQADV6rzeGHbV311m5An3--WNI1AdgtupwAmpraOYP5KzEHMbgJFH9RTR7HnE5YUTy64Ee2KWi0Z61XS77Be6m8NfmF~BPIgHctuxDhCWo53oylz4u4dhxDFSLiHgD3OENGMyJ0raqiTS9PETKBoQAebPpEQsl95ex9NwVLX47o5vAeDymFchkefZlCcoXwlA722QL9foC4kC3qOFr7LZ78MCmIqxzUMQT62znUXHBaMG95MkrrgKgRreNchfXPwDPSvRaOge7AJQRaQ9t51gJayZdmaDpl7mgdDP0cDtBVNte~Ft3u6cUFvwCZHd72KwQ__,string
+usefulInfo,card6_label,Enterprise_Case_Study.pdf,string
+usefulInfo,card6_icon,📄,string
+usefulInfo,card7_id,7,string
+usefulInfo,card7_title,Getting Started Guide,string
+usefulInfo,card7_type,Document,string
+usefulInfo,card7_imageUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/thumbnails/acc5206b-756c-4fc9-b6d3-6351fe7a5998.png?ts=1756806024&Expires=1766072785&Key-Pair-Id=K1ZIOQWY1IQPUD&Signature=Bpf4tVaLYtvwq39S93uTMuQzjPYYI7DFCRJ1qn1dhqfseDq4Cy3y-I71VqBNfMQNmrbBa7gjIJqC9TFC0KAgbDZZnfjnp0eg7-tIO1fsFBmBEyMalfOFxSK~3fs~jfrR8NKrNPA0CGKoHDoaHNPDJC1QJy8m~-Jtinyjlm4tiSgzaMbgSkt~Lrt2doB4BXxy8wedTPWY54V8-KqnfhK5ETh8ZvqSQ2swcVNw5qH5KDMR~9dkzyyueKSfCf3MV~30K46GLJktC6eSf6XvyvG1uaY-EDYQX7Ug-QLcjxKBm7lA9S7hrWiiIRsC~m6bhAIu5Ai0dHAkYY~SJxlowTgjPA__,string
+usefulInfo,card7_label,Getting Started Guide,string
+usefulInfo,card7_icon,📋,string
+usefulInfo,card8_id,8,string
+usefulInfo,card8_title,API Documentation,string
+usefulInfo,card8_type,Document,string
+usefulInfo,card8_imageUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/thumbnails/e4c42c50-9aa4-4ee0-9741-311f80060676.png?ts=1743432025&Expires=1766072785&Key-Pair-Id=K1ZIOQWY1IQPUD&Signature=qGdJ5iANOHRqq4cFTaQqXqJB~6vVuxQddv7-m1fwXMsEoOwwbSMLcobYYiLkvZu83yo8n8KZQRryW8FR9hedKirwD4jwwPqDeIz~4eQsmtaZdHXnT0fweH0Sk2-LwLkm0DFzX2pFeBMR0CQ5a9aKD0wd9CZ93Nf2HDRymSu8Shctjb5VuYEJR-8qlh-Hd9x8yuJ3yCMnL8IvFFhuGD0DMV9Mk90wcvI6jcfWl0t0H~wKnnp3SnFPn2Z6br6gVFDq4VDNqSMwIhPoFdpzbHsMyxR-9jdITptABSpp2mcdGAClUd9syK-hx6M3OeSjHVZUJjUv841OZak-SyzivsJOlA__,string
+usefulInfo,card8_label,API Documentation,string
+usefulInfo,card8_icon,🔧,string
+video,title,"Raghav, rewatch the demo here",string
+video,videoUrl,https://www.loom.com/embed/9aa193c3a2614b79a5ab8f3853df3901?sid=0e8a6d4f-0184-403b-95b8-b6d89f26f7bf&hide_owner=true&hide_title=true&hideEmbedTopBar=true,string
+video,backgroundColor,#FFFFFF,color
+video,textColor,#000000,color
+contact,name,Geneviève Ladouceur,string
+contact,title,Commercial Lead,string
+contact,avatarUrl,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5p2YAjkVlqZKLb3honCfsh-ZLikbRnwzCxA&s,string
+calendar,title,"Raghav, if you need anything in the meantime feel free to book a call!",string
+calendar,timezone,India Standard Time (12:46am),string
+calendar,calendlyUrl,https://calendly.com/genevieve-ladouceur/30min,string
+calendar,primaryLogoUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/logo.png?ts=1749725821,string
+calendar,primaryLogoAlt,Primary Logo,string
+calendar,secondaryLogoUrl,https://png.pngtree.com/png-clipart/20190516/original/pngtree-human-character-with-green-tree-logo.-png-image_3732560.jpg,string
+calendar,secondaryLogoAlt,Secondary Logo,string
+calendar,backgroundColor,#2563EB,color
+calendar,textColor,#FFFFFF,color
+calendar,containerWidth,70%,string
+calendar,containerMinHeight,720px,string
+footer,backgroundColor,#FFFFFF,color
+footer,textColor,#000000,color
+footer,borderColor,#E5E7EB,color
+footer,copyright,© Copyright 2024 Userled.io ltd. All rights reserved.,string
+footer,termsLink,#,string
+footer,privacyLink,#,string
+footer,cookieLink,#,string
+footer,logoUrl,https://assets.userled.io/media/3d4cee98-7f17-4e7a-afcb-06e1f1a50c3e/logo.png?ts=1749725821,string
+footer,logoAlt,Logo,string
+

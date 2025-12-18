@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import CompanyProfile from "./pages/CompanyProfile";
 import Template1 from "./pages/landing/Template1";
 import Template2 from "./pages/landing/Template2";
+import Template3 from "./pages/landing/Template3";
+import Template4 from "./pages/landing/Template4";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/company/:companyId" element={<CompanyProfile />} />
           <Route path="/template-1" element={<Template1 />} />
           <Route path="/template-2" element={<Template2 />} />
+          <Route path="/template-3" element={<Template3 />} />
+          <Route path="/template-4" element={<Template4 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

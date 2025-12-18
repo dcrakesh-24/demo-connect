@@ -1,0 +1,173 @@
+section,field,value,type
+header,logoUrl,https://avatars.githubusercontent.com/u/807036?s=280&v=4,string
+header,logoText,Brandwatch,string
+header,backgroundColor,#FFFFFF,color
+header,textColor,#000000,color
+header,buttonColor,#00C853,color
+header,buttonHoverColor,#00A043,color
+header,navLink1_text,Why Brandwatch,string
+header,navLink1_link,#,string
+header,navLink2_text,Our Suite,string
+header,navLink2_link,#,string
+header,navLink3_text,Solutions,string
+header,navLink3_link,#,string
+header,navLink4_text,Plans,string
+header,navLink4_link,#,string
+header,navLink5_text,Resources,string
+header,navLink5_link,#,string
+header,signInLink,#,string
+header,getStartedLink,#,string
+toc,item1_id,how-much,string
+toc,item1_text,How much do social media managers make,string
+toc,item1_link,#how-much,string
+toc,item1_active,true,string
+toc,item2_id,understanding-role,string
+toc,item2_text,Understanding the role of a social media manager,string
+toc,item2_link,#understanding-role,string
+toc,item3_id,overview-salaries,string
+toc,item3_text,Overview of social media manager salaries,string
+toc,item3_link,#overview-salaries,string
+toc,item4_id,salary-variances,string
+toc,item4_text,Salary variances by industry and location,string
+toc,item4_link,#salary-variances,string
+toc,item5_id,comparing-salaries,string
+toc,item5_text,Comparing social media management salaries,string
+toc,item5_link,#comparing-salaries,string
+toc,item6_id,enhancing-earnings,string
+toc,item6_text,Enhancing earning potential,string
+toc,item6_link,#enhancing-earnings,string
+content,publishedDate,December 10th 2025,string
+content,title,How Much Do Social Media Managers Make: Salary Insights and Factors,string
+content,author,Brandwatch,string
+content,authorLink,#,string
+content,readTime,10 minutes,string
+content,featuredImage,https://s14415.pcdn.co/wp-content/uploads/2024/07/image-2200x1238-1.jpg,string
+content,section1_id,how-much,string
+content,section1_heading,How much do social media managers make,string
+content,section1_content1,Social media managers are worth a lot a money to businesses these days, yet many professionals and companies don't know their true worth.,string
+content,section1_content2,Social media is often seen as a "free" branch of a company's overall media strategy. Because of this, businesses can risk under-funding their social media departments and assuming interns can do the job.,string
+content,section1_content3,This guide will reveal how much social media managers make and explain the difference between salaries for employees, and what you can earn as a freelancer or a consultant.,string
+content,section1_content4,There's no one-size-fits-all approach. A social media manager salary ranges from $45,000 to $81,000 and beyond. However, aspiring social media managers can be paid a lot less.,string
+content,section1_content5,Salaries vary significantly depending on factors such as your expertise, geographical location, and the industry and company you work for.,string
+content,section1_content6,Keep in mind that the more experience and skills you possess, the higher your salary potential becomes.,string
+content,section2_id,understanding-role,string
+content,section2_heading,Understanding the role of a social media manager,string
+content,section2_content1,Before looking at social media manager salary ranges, it's important to understand what the job entails.,string
+content,section2_content2,As a social media manager, your role goes beyond simply posting updates on various platforms.,string
+content,section2_content3,You are responsible for developing and implementing your company marketing strategy to increase brand awareness and foster a strong online presence.,string
+content,section2_content4,Responsibilities include:,string
+content,section2_listItem1,Community management: Engaging with your brand's audience by responding to comments, answering questions, and addressing concerns.,string
+content,section2_listItem2,Content creation: Crafting high-quality content tailored to each platform's specifications and audience preferences.,string
+content,section2_listItem3,Analytics and reporting: Monitoring the performance of social media campaigns, analyzing the data, and adjusting the strategy accordingly.,string
+content,section3_id,overview-salaries,string
+content,section3_heading,Overview of social media manager salaries,string
+content,section3_content1,Let's now get into the detail around how much social media managers make. There are two types of figures here: the average social media salary and salary ranges. Here's what you need to know:,string
+content,section3_content2,The average social media manager salary in 2024 is $55,000 per year. This number is based on the national average salary for social media managers, but keep in mind that your actual earnings may vary depending on your experience, location, and other factors.,string
+content,section3_content3,The salary range for social media managers can vary greatly, and it may not always correlate with your experience. Entry-level professionals should be earning around $35,000 per year, while experienced managers can make more than $80,000 per year.,string
+content,section3_content4,Here's a quick breakdown of the salary range:,string
+content,section3_listItem1,Entry-level: $35,000 - $45,000,string
+content,section3_listItem2,Mid-level: $45,000 - $60,000,string
+content,section3_listItem3,Senior-level: $60,000 - $80,000+,string
+content,section4_id,salary-variances,string
+content,section4_heading,Salary variances by industry and location,string
+content,section4_content1,Industry and location play a large part in the range for a social media manager salary.,string
+content,section4_content2,If you're working in Silicon Valley for a multi-million dollar start-up that's desperate to generate attention, then you may be paid a lot more than if you manage the social media platforms for a pizza franchise in downtown Milwaukee.,string
+content,section4_content3,Here are some of the top paying industries for social media managers:,string
+content,section4_listItem1,Technology,string
+content,section4_listItem2,Finance,string
+content,section4_listItem3,Healthcare,string
+content,section4_listItem4,E-commerce,string
+content,section4_listItem5,Advertising and public relations,string
+content,section4_listItem6,Gambling,string
+content,section4_content4,Why is this? The main factor is money. These industries rely on social media to generate sales and further investment.,string
+content,section4_content5,Social media professionals often have big targets to meet, and they are duly awarded when their campaigns work well.,string
+content,section5_id,comparing-salaries,string
+content,section5_heading,Comparing social media management salaries,string
+content,section5_content1,The average salary for a social media manager also depends on your work status. You might be:,string
+content,section5_content2,Working in-house at a small company,string
+content,section5_content3,Working for large corporation,string
+content,section5_content4,Working as a freelancer,string
+content,section5_content5,Working in an agency,string
+content,section5_content6,When you research salaries, it's important to know where you might fit in the industry. Here's some more detail on the four types of employment.,string
+content,section6_id,enhancing-earnings,string
+content,section6_heading,Enhancing earning potential,string
+content,section6_content1,Many social media managers fail to realize how valuable they are to the businesses and clients they work for. It's possible to boost your social media manager's salary.,string
+content,section6_content2,After all, this sort of job is in high demand and you can always take your services elsewhere.,string
+content,section6_content3,Below, we look at how a social media manager can take their earnings to the next level.,string
+ad,logoUrl,https://avatars.githubusercontent.com/u/807036?s=280&v=4,string
+ad,title,Get started with Brandwatch Social Media Management platform,string
+ad,description,"Everything you need to discover, attract, and engage customers on social, across teams and regions.",string
+ad,ctaButtonText,Get Started,string
+ad,ctaButtonLink,#,string
+ad,backgroundColor,#f9f9f9,color
+ad,borderColor,#f9f9f9,color
+ad,buttonColor,#00C853,color
+ad,buttonHoverColor,#00A043,color
+footer,column1_title,Our Suite,string
+footer,column1_link1_text,Consumer Intelligence,string
+footer,column1_link1_url,#,string
+footer,column1_link2_text,Social Media Management,string
+footer,column1_link2_url,#,string
+footer,column1_link3_text,Influencer Marketing,string
+footer,column1_link3_url,#,string
+footer,column2_title,Resources,string
+footer,column2_link1_text,Blog,string
+footer,column2_link1_url,#,string
+footer,column2_link2_text,Events,string
+footer,column2_link2_url,#,string
+footer,column2_link3_text,Webinars,string
+footer,column2_link3_url,#,string
+footer,column3_title,Company,string
+footer,column3_link1_text,About Us,string
+footer,column3_link1_url,#,string
+footer,column3_link2_text,Careers,string
+footer,column3_link2_url,#,string
+footer,column3_link3_text,Contact Us,string
+footer,column3_link3_url,#,string
+footer,column4_title,Legal,string
+footer,column4_link1_text,Legal Hub,string
+footer,column4_link1_url,#,string
+footer,column4_link2_text,User Privacy Statement,string
+footer,column4_link2_url,#,string
+footer,column4_link3_text,Author Privacy Statement,string
+footer,column4_link3_url,#,string
+footer,column5_title,More,string
+footer,column5_link1_text,Customer Support,string
+footer,column5_link1_url,#,string
+footer,column5_link2_text,Help Center,string
+footer,column5_link2_url,#,string
+footer,column5_link3_text,Platform Status,string
+footer,column5_link3_url,#,string
+footer,newsletterTitle,The Brandwatch Bulletin,string
+footer,newsletterDescription,All our latest data stories and insights straight to your inbox,string
+footer,newsletterButtonText,Sign up,string
+footer,language,English,string
+footer,copyright,Copyright © 2025 Brandwatch. All Rights Reserved. Cision Group Ltd, 7th Floor, 5 Churchill Place, Canary Wharf, London, E14 5HU,string
+footer,companyInfo,Company number: 03898053 | VAT number: 754 750 710,string
+footer,socialX,#,string
+footer,socialFacebook,#,string
+footer,socialLinkedin,#,string
+footer,socialInstagram,#,string
+footer,socialYoutube,#,string
+footer,backgroundColor,#FFFFFF,color
+footer,textColor,#000000,color
+footer,linkColor,#000000,color
+chatWidget,enabled,true,string
+chatWidget,message,Great, how can I help you today? Ask me anything!,string
+chatWidget,logoUrl,https://avatars.githubusercontent.com/u/807036?s=280&v=4,string
+chatWidget,backgroundColor,#FFFFFF,color
+chatWidget,textColor,#000000,color
+share,xLink,#,string
+share,facebookLink,#,string
+share,linkedinLink,#,string
+share,redditLink,#,string
+share,whatsappLink,#,string
+productDemo,title,GET A PRODUCT DEMO,string
+productDemo,heading,Ready to learn more about the Brandwatch Social Media Management platform?,string
+productDemo,ctaButtonText,Get a product demo,string
+productDemo,ctaButtonLink,#,string
+productDemo,backgroundColor,#00C853,color
+productDemo,textColor,#FFFFFF,color
+productDemo,buttonColor,#FFFFFF,color
+productDemo,buttonHoverColor,#F5F5F5,color
+

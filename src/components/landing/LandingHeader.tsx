@@ -1,15 +1,30 @@
 import { Link } from "react-router-dom";
 
-export const LandingHeader = () => {
+interface LandingHeaderProps {
+  logoUrl?: string;
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+  };
+}
+
+export const LandingHeader = ({ logoUrl, colors }: LandingHeaderProps) => {
+  const defaultLogo = "https://promanagecdn.blob.core.windows.net/promanage/images/logo-color-230x60.png";
+  const bgColor = colors?.backgroundColor || "#FFFFFF";
+  const textColor = colors?.textColor || "#000000";
+
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <header 
+      className="border-b border-gray-200 sticky top-0 z-50"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="https://promanagecdn.blob.core.windows.net/promanage/images/logo-color-230x60.png"
-              alt="ProManage Logo"
+              src={logoUrl || defaultLogo}
+              alt="Logo"
               className="h-10 w-auto"
             />
           </Link>

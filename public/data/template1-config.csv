@@ -1,0 +1,122 @@
+section,field,value,type
+header,logoUrl,https://img.pikbest.com/png-images/20241022/stealth-masked-hacker-gaming-logo-for-gamers_10991543.png!w700wp,string
+header,backgroundColor,#FFFFFF,color
+header,textColor,#000000,color
+hero,companyName,General Motors,string
+hero,headline,Hey General Motors,,string
+hero,highlightedText,75% Higher Conversion Rates!,string
+hero,subheadline,Boost Your Business by Reaching Local sdfdsaew wef w Customers with\nUse 'Near Me' Searches To\nYour Advantage.,string
+hero,ctaButtonText,Start My Free Trial,string
+hero,ctaButtonLink,#,string
+hero,backgroundColor,#011A65,color
+hero,textColor,#FFFFFF,color
+hero,highlightedTextColor,#FF6B35,color
+hero,ctaButtonColor,#00d4ff,color
+hero,ctaButtonHoverColor,#00b8e6,color
+hero,graphicBackgroundImage,https://lscdn.blob.core.windows.net/content/c/smart-pm/img/client-logo-bg.png,string
+hero,companyLogo,https://img.pikbest.com/png-images/20241022/stealth-masked-hacker-gaming-logo-for-gamers_10991543.png!w700wp,string
+intro,title,Hey General Motors,,string
+intro,description,"Are you looking for one ultimate solution to ignite your business's potential? With ProManage.biz, you can conquer the hyperlocal marketing realm. Streamline all your Google listings in one dashboard. Our core features include direct API integration with leading search engines and custom microsites for each location. NAP consistency and BVN tracking. We also offer reputation management, AI-assisted review responses, duplicate listing audit, and CRM integration. ALL FOR ZERO MEDIA COST!",string
+intro,ctaButtonText,Talk To Us,string
+intro,ctaButtonLink,#,string
+intro,backgroundColor,#FFFFFF,color
+intro,textColor,#000000,color
+features,title,What we do?,string
+features,backgroundColor,#F2F4FF,color
+features,textColor,#000000,color
+features,ctaButtonText,Get in Touch,string
+features,ctaButtonLink,#,string
+features,item1_id,1,string
+features,item1_icon,search-chart,string
+features,item1_iconColor,bg-yellow-500,string
+features,item1_title,Simple Google Business Optimization,string
+features,item1_description,Enjoy a centralized dashboard to manage multilocal listings. Update them simultaneously in just a few clicks to always stay on point and on-brand.,string
+features,item2_id,2,string
+features,item2_icon,lightbulb-heart,string
+features,item2_iconColor,bg-teal-500,string
+features,item2_title,Become a Reliable & Loved Brand,string
+features,item2_description,Build trust and reliability with your audience by demonstrating a commitment to customer satisfaction and quality service.,string
+features,item3_id,3,string
+features,item3_icon,trending-up,string
+features,item3_iconColor,bg-orange-500,string
+features,item3_title,Conquer Google Snack Pack,string
+features,item3_description,"The dashboard helps you create posts, events, and offers and respond to messages from multiple platforms for customer engagement with less effort.",string
+features,item4_id,4,string
+features,item4_icon,phone-call,string
+features,item4_iconColor,bg-pink-500,string
+features,item4_title,"Prompt More Calls, Clicks & Store Visits",string
+features,item4_description,"Accurate and up-to-date information, including business hours, name, phone number, and address (NAP) increases visibility leading to more calls and clicks.",string
+features,item5_id,5,string
+features,item5_icon,star-message,string
+features,item5_iconColor,bg-blue-500,string
+features,item5_title,Superior Review Management,string
+features,item5_description,Be equipped with AI technology to perform sentiment analysis and valuable insights into customer feedback.,string
+features,item6_id,6,string
+features,item6_icon,check-document,string
+features,item6_iconColor,bg-purple-500,string
+features,item6_title,Increased Brand Credibility,string
+features,item6_description,Maintain consistent & accurate business information across all online directories.,string
+caseStudies,title,Our Case Studies,string
+caseStudies,backgroundColor,#FFFFFF,color
+caseStudies,textColor,#000000,color
+caseStudies,item1_id,1,string
+caseStudies,item1_title,Aster Pharmacy's Journey to Successful Hyperlocal Marketing,string
+caseStudies,item1_companyName,Aster Pharmacy,string
+caseStudies,item1_companyTagline,We'll Treat You Well,string
+caseStudies,item1_description,"When Aster Pharmacy opened in India in February 2021, it had rapid expansion plans. However, it required physical outlets and a solid hyperlocal marketing strategy to achieve growth. Targeting prospective local customers who conducted online searches for 'pharmacies near me' could quickly increase footfall/ inquiries and its customer base. Unfortunately, Aster's hyperlocal marketing process was fraught with issues like a limited online presence, poor listing rankings, a limited number of reviews, etc. The brand lacked a primary means to resolve these problems.",string
+caseStudies,item1_ctaText,View Full Case Study,string
+caseStudies,item1_ctaLink,#,string
+caseStudies,item1_imageUrl,https://lscdn.blob.core.windows.net/content/c/smart-pm/img/case-study-healthcare.webp,string
+marketing,title,Hyperlocal Marketing Software for Marketers,string
+marketing,subtitle,Learn how to Use 'Near Me' Searches To Your Advantage.,string
+marketing,ctaButtonText,Request a Demo,string
+marketing,ctaButtonLink,#,string
+marketing,backgroundColor,#F2F4FF,color
+marketing,textColor,#000000,color
+marketing,imageUrl,https://promanagecdn.blob.core.windows.net/promanage/images/smart-pm/img/hyperlocal-marketing-software.svg,string
+blog,title,Blogs,string
+blog,subtitle,"We would like to share with you knowledge, experiences and latest news",string
+blog,backgroundColor,#FFFFFF,color
+blog,textColor,#000000,color
+blog,ctaButtonText,Request A Demo,string
+blog,ctaButtonLink,#,string
+blog,post1_id,1,string
+blog,post1_title,Top 7 Hyperlocal Search Ranking Tricks You Need to Know in 2022,string
+blog,post1_description,Here are the top 7 GMB and SEO tips to rank higher on hyperlocal searches and establish an authority in your business' locality... Businesses know the benefits of...,string
+blog,post1_imageUrl,https://miro.medium.com/v2/resize:fit:828/format:webp/0*rEZkgd5rrnl-CGvA.png,string
+blog,post1_readMoreLink,#,string
+blog,post2_id,2,string
+blog,post2_title,How to Increase Google Reviews for your Business Organically,string
+blog,post2_description,Learn 7 effective ways on how to increase Google reviews and build a deeper and wider customer base for your business. What's the one thing people will...,string
+blog,post2_imageUrl,https://miro.medium.com/v2/resize:fit:828/format:webp/1*3pyj1VUwJGqKIDlJoPA9Tg.png,string
+blog,post2_readMoreLink,#,string
+blog,post3_id,3,string
+blog,post3_title,How to Leverage Google My Business (GMB) and Optimise it for Better Footfalls,string
+blog,post3_description,Learn how to increase your hyperlocal discovery and search traffic with 8 quick and actionable steps for GMB optimisation. 50% of people who do a hyperloc...,string
+blog,post3_imageUrl,https://miro.medium.com/v2/resize:fit:828/format:webp/0*rMrUZTNSIusQZE33.png,string
+blog,post3_readMoreLink,#,string
+blog,post4_id,4,string
+blog,post4_title,9 Essential GMB Optimisations to Rank Higher in Hyperlocal Discovery,string
+blog,post4_description,"They say first impressions matter. When people search online for a general store or medical store 'near me, they expect crystal clear information - the hours of...",string
+blog,post4_imageUrl,https://miro.medium.com/v2/resize:fit:828/format:webp/0*A8zl_DE39hsxB_a2.png,string
+blog,post4_readMoreLink,#,string
+blog,post5_id,5,string
+blog,post5_title,Google E.A.T and Hyperlocal Discovery: Everything you Need to Know,string
+blog,post5_description,E-A-T is a guiding principle to evaluate the page quality of websites. Here is everything you need to do to incorporate E-A-T for your business website Assume..,string
+blog,post5_imageUrl,https://miro.medium.com/v2/resize:fit:828/format:webp/1*oulxtSVZbOIalmGlmEWxoA.png,string
+blog,post5_readMoreLink,#,string
+blog,post6_id,6,string
+blog,post6_title,Can Competitors Edit My Google Business Listing?,string
+blog,post6_description,"""Can competitors edit my google business listing?"" Find out the answer along with how you can protect your profile in this article. Yes, not just competitors but...",string
+blog,post6_imageUrl,https://miro.medium.com/v2/resize:fit:720/format:webp/1*BRk0FehgN1h9uqh5XkP2bQ.png,string
+blog,post6_readMoreLink,#,string
+footer,backgroundColor,#FFFFFF,color
+footer,textColor,#000000,color
+footer,linkedinLink,#,string
+footer,facebookLink,#,string
+footer,instagramLink,#,string
+footer,aboutLink,#,string
+footer,blogLink,#,string
+footer,privacyLink,#,string
+footer,copyright,© 2023 Copyright promanage.biz All Rights Reserved.,string
+

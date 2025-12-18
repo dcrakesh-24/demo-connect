@@ -1,50 +1,85 @@
+import { useEffect, useState } from "react";
 import { PersonalizedHeader } from "@/components/landing/template2/PersonalizedHeader";
 import { PersonalizedHero } from "@/components/landing/template2/PersonalizedHero";
 import { UsefulInfoSection } from "@/components/landing/template2/UsefulInfoSection";
 import { VideoSection } from "@/components/landing/template2/VideoSection";
 import { CalendarSection } from "@/components/landing/template2/CalendarSection";
 import { Template2Footer } from "@/components/landing/template2/Template2Footer";
-import { template2Data } from "@/data/landing/template2";
+import { loadTemplate2Data } from "@/data/landing/template2Csv";
+import type { Template2Data } from "@/data/landing/template2";
 
 /**
  * Landing Page Template 2
  * 
  * Personalized Demo/Landing Page Template
- * This template is designed for personalized demo experiences with video, calendar, and useful information sections.
- * 
- * Data is currently static but structured to support dynamic data loading later.
+ * Data is loaded from CSV file for easy configuration.
  */
 const Template2 = () => {
+  const [data, setData] = useState<Template2Data | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    loadTemplate2Data()
+      .then((loadedData) => {
+        setData(loadedData);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-white">Loading...</div>
+      </div>
+    );
+  }
+
+  if (error || !data) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-red-500">Error loading data: {error || "Unknown error"}</div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen" style={{ backgroundColor: data.colors?.hero?.backgroundColor || '#000000' }}>
       {/* Header */}
-      <PersonalizedHeader data={template2Data.header} />
+      <PersonalizedHeader data={data.header} colors={data.colors?.header} />
 
       <main>
         {/* Hero Section */}
-        <PersonalizedHero data={template2Data.hero} />
+        <PersonalizedHero data={data.hero} colors={data.colors?.hero} />
 
         {/* Useful Information Section */}
         <UsefulInfoSection
-          title={template2Data.usefulInfo.title}
-          cards={template2Data.usefulInfo.cards}
+          title={data.usefulInfo.title}
+          cards={data.usefulInfo.cards}
+          colors={data.colors?.usefulInfo}
         />
 
         {/* Video Section */}
-        <VideoSection data={template2Data.video} />
+        <VideoSection data={data.video} colors={data.colors?.video} />
 
         {/* Calendar Section */}
         <CalendarSection
-          calendar={template2Data.calendar}
-          contact={template2Data.contact}
+          calendar={data.calendar}
+          contact={data.contact}
+          colors={data.colors?.calendar}
         />
       </main>
 
       {/* Footer */}
       <Template2Footer
-        copyright={template2Data.footer.copyright}
-        links={template2Data.footer.links}
-        logo={template2Data.footer.logo}
+        copyright={data.footer.copyright}
+        links={data.footer.links}
+        logo={data.footer.logo}
+        colors={data.colors?.footer}
       />
     </div>
   );

@@ -1,44 +1,72 @@
 import { Button } from "@/components/ui/button";
 import { HeroSection as HeroSectionType } from "@/data/landing/template1";
-import { Search, TrendingUp, MapPin } from "lucide-react";
 
 interface HeroSectionProps {
   data: HeroSectionType;
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+    highlightedTextColor?: string;
+    ctaButtonColor?: string;
+    ctaButtonHoverColor?: string;
+  };
 }
 
-export const HeroSection = ({ data }: HeroSectionProps) => {
+export const HeroSection = ({ data, colors }: HeroSectionProps) => {
+  const bgColor = colors?.backgroundColor || "#011A65";
+  const textColor = colors?.textColor || "#FFFFFF";
+  const highlightedColor = colors?.highlightedTextColor || "#FF6B35";
+  const ctaColor = colors?.ctaButtonColor || "#00d4ff";
+  const ctaHoverColor = colors?.ctaButtonHoverColor || "#00b8e6";
+
   return (
-    <section className="relative bg-[#011A65] text-white min-h-[600px] flex items-center overflow-hidden">
+    <section 
+      className="relative min-h-[600px] flex items-center overflow-hidden"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <div className="container mx-auto px-4 py-16 lg:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
+        <div className="flex flex-col lg:flex-row items-center lg:items-center w-full gap-0">
           {/* Left Content */}
-          <div className="space-y-6 z-10">
-            <h5 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+          <div className="space-y-6 z-10 flex-1 lg:pr-0 lg:mr-0">
+            <h5 className="text-xl md:text-2xl lg:text-3xl font-bold leading-tight">
               {data.headline}
+              <span>
               <br />
               Boost Your Business by
               <br />
               Reaching Local Customers with
               <br />
-              <span className="text-orange-500">{data.highlightedText}</span>
+
+              </span>
+             
+              <span style={{ color: highlightedColor }}>{data.highlightedText}</span>
             </h5>
-            <h5 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+            <h5 className="text-2xl md:text-2xl lg:text-3xl font-bold leading-tight">
     
-              Use <span className="text-orange-500">'Near Me'</span> Searches To
+              Use <span style={{ color: highlightedColor }}>'Near Me'</span> Searches To
               <br />
               Your Advantage.
             </h5>
             
             <Button
               size="lg"
-              className="bg-[#00d4ff] hover:bg-[#00b8e6] text-white font-semibold px-8 py-6 text-lg rounded-lg"
+              className="text-white font-semibold px-8 py-6 text-lg rounded-lg"
+              style={{ backgroundColor: ctaColor }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = ctaHoverColor;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = ctaColor;
+              }}
             >
               {data.ctaButton.text}
             </Button>
+            
           </div>
+          
 
           {/* Right Graphic */}
-          <div className="relative flex items-center justify-center lg:justify-end">
+          <div className="relative flex items-center justify-center lg:justify-start flex-1 lg:pl-0 lg:ml-0">
             <div
               className="hero-graphic"
               style={

@@ -96,6 +96,46 @@ export interface LandingPageData {
     };
     copyright: string;
   };
+  colors?: {
+    header?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+    hero?: {
+      backgroundColor?: string;
+      textColor?: string;
+      highlightedTextColor?: string;
+      ctaButtonColor?: string;
+      ctaButtonHoverColor?: string;
+    };
+    intro?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+    features?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+    caseStudies?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+    marketing?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+    blog?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+    footer?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+  };
+  logos?: {
+    header?: string;
+  };
 }
 
 export const template1Data: LandingPageData = {

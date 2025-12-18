@@ -18,6 +18,10 @@ import {
 import { cn } from "@/lib/utils";
 
 interface FeaturesSectionProps {
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+  };
   title: string;
   items: Feature[];
   ctaButton: {
@@ -55,11 +59,17 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   ),
 };
 
-export const FeaturesSection = ({ title, items, ctaButton }: FeaturesSectionProps) => {
+export const FeaturesSection = ({ title, items, ctaButton, colors }: FeaturesSectionProps) => {
+  const bgColor = colors?.backgroundColor || "#F2F4FF";
+  const textColor = colors?.textColor || "#000000";
+  
   return (
-    <section className="bg-[#F2F4FF] py-8 lg:py-8">
+    <section 
+      className="py-8 lg:py-8"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">{title}</h2>
+        <h2 className="text-2xl md:text-2xl font-bold text-center mb-8">{title}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {items.map((feature) => {
@@ -68,7 +78,7 @@ export const FeaturesSection = ({ title, items, ctaButton }: FeaturesSectionProp
             return (
               <div
                 key={feature.id}
-                className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+                className=" rounded-lg p-6"
               >
                 <div className="flex justify-center mb-4">
                   <div className={cn("w-12 h-12 rounded-lg flex items-center justify-center text-white", feature.iconColor)}>
@@ -79,8 +89,8 @@ export const FeaturesSection = ({ title, items, ctaButton }: FeaturesSectionProp
                     )}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-lg font-bold text-gray-800 mb-3 text-center">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-center text-sm">{feature.description}</p>
               </div>
             );
           })}
@@ -90,7 +100,7 @@ export const FeaturesSection = ({ title, items, ctaButton }: FeaturesSectionProp
           <Button
             variant="outline"
             size="lg"
-            className="border-blue-500 text-blue-500 hover:bg-blue-50 font-semibold px-8 py-6 text-lg rounded-lg"
+            className="border-blue-500 text-blue-500 hover:bg-blue-50 font-semibold px-5 py-5 text-sm rounded-lg"
           >
             {ctaButton.text}
           </Button>

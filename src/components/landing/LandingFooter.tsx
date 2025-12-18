@@ -13,11 +13,21 @@ interface LandingFooterProps {
     privacy: string;
   };
   copyright: string;
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+  };
 }
 
-export const LandingFooter = ({ socialLinks, navLinks, copyright }: LandingFooterProps) => {
+export const LandingFooter = ({ socialLinks, navLinks, copyright, colors }: LandingFooterProps) => {
+  const bgColor = colors?.backgroundColor || "#011A65";
+  const textColor = colors?.textColor || "#FFFFFF";
+  
   return (
-    <footer className="bg-[#011A65] text-white py-8">
+    <footer 
+      className="py-8"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-6">
           {/* Social Media Icons */}

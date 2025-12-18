@@ -7,21 +7,31 @@ interface MarketingSectionProps {
     text: string;
     link: string;
   };
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+  };
 }
 
-export const MarketingSection = ({ title, subtitle, ctaButton }: MarketingSectionProps) => {
+export const MarketingSection = ({ title, subtitle, ctaButton, colors }: MarketingSectionProps) => {
+  const bgColor = colors?.backgroundColor || "#F2F4FF";
+  const textColor = colors?.textColor || "#000000";
+  
   return (
-    <section className="bg-[#F2F4FF] py-8 lg:py-8">
+    <section 
+      className="py-8 lg:py-8"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Left Content */}
-          <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800">{title}</h2>
-            <p className="text-lg text-gray-600">{subtitle}</p>
-            <div>
+          <div className="space-y-2">
+            <h2 className="text-2xl md:text-2xl font-bold text-gray-800">{title}</h2>
+            <p className="text-sm text-gray-600">{subtitle}</p>
+            <div className="pt-4">
               <Button
                 size="lg"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-6 text-lg rounded-lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-3 text-sm rounded-lg"
               >
                 {ctaButton.text}
               </Button>

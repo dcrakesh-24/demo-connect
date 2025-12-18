@@ -11,11 +11,23 @@ interface Template2FooterProps {
     imageUrl: string;
     alt: string;
   };
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+    borderColor?: string;
+  };
 }
 
-export const Template2Footer = ({ copyright, links, logo }: Template2FooterProps) => {
+export const Template2Footer = ({ copyright, links, logo, colors }: Template2FooterProps) => {
+  const bgColor = colors?.backgroundColor || "#FFFFFF";
+  const textColor = colors?.textColor || "#000000";
+  const borderColor = colors?.borderColor || "#E5E7EB";
+  
   return (
-    <footer className="bg-white text-black py-8 border-t border-gray-200">
+    <footer 
+      className="py-8 border-t"
+      style={{ backgroundColor: bgColor, color: textColor, borderColor: borderColor }}
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Center: Logo and Copyright */}

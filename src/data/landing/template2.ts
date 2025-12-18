@@ -101,6 +101,39 @@ export interface Template2Data {
       alt: string;
     };
   };
+  colors?: {
+    header?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+    hero?: {
+      backgroundColor?: string;
+      textColor?: string;
+      greetingFontSize?: string;
+      greetingLineHeight?: string;
+      greetingFontFamily?: string;
+      greetingFontWeight?: string;
+    };
+    usefulInfo?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+    video?: {
+      backgroundColor?: string;
+      textColor?: string;
+    };
+    calendar?: {
+      backgroundColor?: string;
+      textColor?: string;
+      containerWidth?: string;
+      containerMinHeight?: string;
+    };
+    footer?: {
+      backgroundColor?: string;
+      textColor?: string;
+      borderColor?: string;
+    };
+  };
 }
 
 export const template2Data: Template2Data = {

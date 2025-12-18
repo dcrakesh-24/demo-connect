@@ -3,11 +3,21 @@ import { PersonalizedHeader as PersonalizedHeaderType } from "@/data/landing/tem
 
 interface PersonalizedHeaderProps {
   data: PersonalizedHeaderType;
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+  };
 }
 
-export const PersonalizedHeader = ({ data }: PersonalizedHeaderProps) => {
+export const PersonalizedHeader = ({ data, colors }: PersonalizedHeaderProps) => {
+  const bgColor = colors?.backgroundColor || "#FFFFFF";
+  const textColor = colors?.textColor || "#000000";
+  
   return (
-    <header className="bg-white text-black py-4 px-6 border-b border-gray-200">
+    <header 
+      className="py-4 px-6 border-b border-gray-200"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <div className="container mx-auto flex items-center justify-between">
         {/* Left: Logo and Greeting */}
         <div className="flex items-center gap-3">

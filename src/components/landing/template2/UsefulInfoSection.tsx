@@ -11,10 +11,16 @@ import {
 interface UsefulInfoSectionProps {
   title: string;
   cards: UsefulInfoCard[];
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+  };
 }
 
-export const UsefulInfoSection = ({ title, cards }: UsefulInfoSectionProps) => {
+export const UsefulInfoSection = ({ title, cards, colors }: UsefulInfoSectionProps) => {
   const [api, setApi] = React.useState<CarouselApi>();
+  const bgColor = colors?.backgroundColor || "#FFFFFF";
+  const textColor = colors?.textColor || "#000000";
 
   // Auto-scroll functionality
   useEffect(() => {
@@ -32,7 +38,10 @@ export const UsefulInfoSection = ({ title, cards }: UsefulInfoSectionProps) => {
   }, [api]);
 
   return (
-    <section className="bg-white py-16">
+    <section 
+      className="py-16"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
           {title}

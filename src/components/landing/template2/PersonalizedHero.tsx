@@ -2,11 +2,31 @@ import { PersonalizedHero as PersonalizedHeroType } from "@/data/landing/templat
 
 interface PersonalizedHeroProps {
   data: PersonalizedHeroType;
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+    greetingFontSize?: string;
+    greetingLineHeight?: string;
+    greetingFontFamily?: string;
+    greetingFontWeight?: string;
+  };
 }
 
-export const PersonalizedHero = ({ data }: PersonalizedHeroProps) => {
+export const PersonalizedHero = ({ data, colors }: PersonalizedHeroProps) => {
+  const bgColor = colors?.backgroundColor || "#000000";
+  const textColor = colors?.textColor || "#FFFFFF";
+  const greetingStyle = {
+    fontSize: colors?.greetingFontSize || "48px",
+    lineHeight: colors?.greetingLineHeight || "1.25",
+    fontFamily: colors?.greetingFontFamily || "Aeonik",
+    fontWeight: colors?.greetingFontWeight || "700",
+  };
+  
   return (
-    <section className="bg-black text-white min-h-[600px] flex items-center py-16">
+    <section 
+      className="min-h-[600px] flex items-center py-16"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -26,7 +46,7 @@ export const PersonalizedHero = ({ data }: PersonalizedHeroProps) => {
             </div>
 
             {/* Greeting */}
-            <h1 className="personalized-greeting whitespace-pre-line text-white">
+            <h1 className="whitespace-pre-line" style={greetingStyle}>
               {data.greeting}
             </h1>
 

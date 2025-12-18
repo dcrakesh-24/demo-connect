@@ -5,9 +5,19 @@ import { Calendar, Globe } from "lucide-react";
 interface CalendarSectionProps {
   calendar: CalendarSectionType;
   contact: ContactPerson;
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+    containerWidth?: string;
+    containerMinHeight?: string;
+  };
 }
 
-export const CalendarSection = ({ calendar, contact }: CalendarSectionProps) => {
+export const CalendarSection = ({ calendar, contact, colors }: CalendarSectionProps) => {
+  const containerWidth = colors?.containerWidth || "70%";
+  const containerMinHeight = colors?.containerMinHeight || "720px";
+  const bgColor = colors?.backgroundColor || "#2563EB";
+  const textColor = colors?.textColor || "#FFFFFF";
   // January 2026 starts on Thursday (Jan 1 = Thursday)
   // Generate calendar dates: 3 empty cells (Mon-Wed), then 1-31
   const getCalendarDates = () => {
@@ -28,7 +38,15 @@ export const CalendarSection = ({ calendar, contact }: CalendarSectionProps) => 
   return (
     <section className="bg-white py-24 lg:py-32">
       <div className=" mx-auto px-4">
-        <div className="max-w-[70%] mx-auto bg-blue-600 text-white rounded-lg p-12 lg:p-20 min-h-[720px] lg:min-h-[720px] flex items-center">
+        <div 
+          className="mx-auto rounded-lg p-12 lg:p-20 flex items-center"
+          style={{ 
+            maxWidth: containerWidth,
+            minHeight: containerMinHeight,
+            backgroundColor: bgColor,
+            color: textColor
+          }}
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
             {/* Left: Message and Contact */}
             <div className="space-y-8 lg:space-y-10 flex flex-col items-center lg:items-start text-center lg:text-left">

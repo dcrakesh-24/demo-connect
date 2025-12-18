@@ -2,11 +2,21 @@ import { VideoSection as VideoSectionType } from "@/data/landing/template2";
 
 interface VideoSectionProps {
   data: VideoSectionType;
+  colors?: {
+    backgroundColor?: string;
+    textColor?: string;
+  };
 }
 
-export const VideoSection = ({ data }: VideoSectionProps) => {
+export const VideoSection = ({ data, colors }: VideoSectionProps) => {
+  const bgColor = colors?.backgroundColor || "#FFFFFF";
+  const textColor = colors?.textColor || "#000000";
+  
   return (
-    <section className="bg-white py-16">
+    <section 
+      className="py-16"
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">
