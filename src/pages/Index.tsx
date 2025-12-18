@@ -17,17 +17,34 @@ const Index = () => {
   const { adsByCompanyId, loading: adsLoading, error: adsError } = useAdsFromCsv();
 
   const feedItems = useMemo(() => {
+    console.log("🔍 Filtering - selectedCompany:", selectedCompany, "journeyStage:", journeyStage);
+    console.log("📦 Total posts:", companyPosts.length);
+    console.log("🎯 Ads by company:", Object.keys(adsByCompanyId).map(k => `${k}: ${adsByCompanyId[k]?.length || 0} ads`));
+    
     const filteredPosts = selectedCompany
       ? companyPosts.filter((post) => post.companyId === selectedCompany)
       : companyPosts;
 
-    const stageFilteredPosts = adsLoading
-      ? filteredPosts
-      : filteredPosts.filter((post) => {
-          if (!post.isSponsored) return true;
-          const ads = adsByCompanyId[post.companyId] ?? [];
-          return ads.some((a) => a.stage === journeyStage);
-        });
+    console.log("📌 After company filter:", filteredPosts.length, "posts");
+
+    // Always filter by stage (even while loading, ads will be empty so sponsored posts won't show)
+    const stageFilteredPosts = filteredPosts.filter((post) => {
+      if (!post.isSponsored) {
+        console.log("✅ Regular post from", post.companyId, "- including");
+        return true;
+      }
+      const ads = adsByCompanyId[post.companyId] ?? [];
+      const hasMatchingAd = ads.some((a) => a.stage === journeyStage);
+      console.log(`🎯 Sponsored post from ${post.companyId}:`, {
+        adsCount: ads.length,
+        adStages: ads.map(a => a.stage),
+        journeyStage,
+        hasMatchingAd
+      });
+      return hasMatchingAd;
+    });
+
+    console.log("✨ After stage filter:", stageFilteredPosts.length, "posts");
 
     return stageFilteredPosts.map((post) => {
       const company = companies.find((c) => c.id === post.companyId);
@@ -53,10 +70,12 @@ const Index = () => {
         ad,
       };
     });
-  }, [selectedCompany, journeyStage, companyPosts, adsByCompanyId, adsLoading]);
+  }, [selectedCompany, journeyStage, companyPosts, adsByCompanyId]);
 
   const currentCompany = companies.find((c) => c.id === selectedCompany);
   const sidebarCompanyId = selectedCompany ?? feedItems[0]?.companyId ?? null;
+  const sidebarCompany = companies.find((c) => c.id === sidebarCompanyId) ?? companies[0];
+  const ceo = sidebarCompany.ceo;
 
   return (
     <div className="min-h-screen bg-background">
@@ -65,10 +84,12 @@ const Index = () => {
         onCompanySelect={setSelectedCompany}
         selectedJourneyStage={journeyStage}
         onJourneyStageSelect={setJourneyStage}
+        userAvatar={ceo.avatar}
+        userInitials={ceo.initials}
       />
       
       <main className="max-w-[1128px] mx-auto px-4 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-[225px_1fr_300px] gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[225px_555px_300px] gap-6 justify-center">
           {/* Left Sidebar */}
           <aside className="hidden lg:block space-y-2">
             <ProfileCard companyId={sidebarCompanyId} />
@@ -76,7 +97,7 @@ const Index = () => {
 
           {/* Main Feed */}
           <section className="space-y-4">
-            <CreatePost />
+            <CreatePost userAvatar={ceo.avatar} userInitials={ceo.initials} />
 
             {postsLoading && (
               <div className="linkedin-card p-4 text-sm text-muted-foreground">
@@ -96,22 +117,6 @@ const Index = () => {
             {adsError && (
               <div className="linkedin-card p-4 text-sm text-destructive">
                 Failed to load ads from CSV: {adsError}
-              </div>
-            )}
-            
-            {/* Filter indicator */}
-            {selectedCompany && currentCompany && (
-              <div className="linkedin-card p-4 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className="text-sm text-muted-foreground">Showing posts from:</span>
-                  <span className="font-semibold text-foreground">{currentCompany.name}</span>
-                </div>
-                <button 
-                  onClick={() => setSelectedCompany(null)}
-                  className="text-sm text-primary hover:underline"
-                >
-                  Show all
-                </button>
               </div>
             )}
             

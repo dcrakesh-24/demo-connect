@@ -1,4 +1,4 @@
-export type JourneyStage = "unware" | "ware" | "consideration" | "opputunerry" | "customer";
+export type JourneyStage = "unware" | "ware" | "consideration" | "opportunity" | "customer";
 
 export type AdType = "single" | "carousel";
 
@@ -10,6 +10,7 @@ export type AdCreative = {
   images: string[];
   landingUrl: string;
   ctaLabel: string;
+  ctaHeading?: string;
 };
 
 export const adsByCompanyId: Record<string, AdCreative[]> = {
@@ -46,9 +47,9 @@ export const adsByCompanyId: Record<string, AdCreative[]> = {
       ctaLabel: "See models",
     },
     {
-      id: "apple-opputunerry-1",
+      id: "apple-opportunity-1",
       companyId: "apple",
-      stage: "opputunerry",
+      stage: "opportunity",
       type: "single",
       images: ["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=500&fit=crop"],
       landingUrl: "https://www.apple.com/shop/buy-iphone",
@@ -99,9 +100,9 @@ export const adsByCompanyId: Record<string, AdCreative[]> = {
       ctaLabel: "Compare products",
     },
     {
-      id: "google-opputunerry-1",
+      id: "google-opportunity-1",
       companyId: "google",
-      stage: "opputunerry",
+      stage: "opportunity",
       type: "single",
       images: ["https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800&h=500&fit=crop"],
       landingUrl: "https://cloud.google.com/products/ai",
@@ -149,9 +150,9 @@ export const adsByCompanyId: Record<string, AdCreative[]> = {
       ctaLabel: "See plans",
     },
     {
-      id: "microsoft-opputunerry-1",
+      id: "microsoft-opportunity-1",
       companyId: "microsoft",
-      stage: "opputunerry",
+      stage: "opportunity",
       type: "single",
       images: ["https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=500&fit=crop"],
       landingUrl: "https://www.microsoft.com/microsoft-365",
@@ -203,9 +204,9 @@ export const adsByCompanyId: Record<string, AdCreative[]> = {
       ctaLabel: "Explore use-cases",
     },
     {
-      id: "tcs-opputunerry-1",
+      id: "tcs-opportunity-1",
       companyId: "tcs",
-      stage: "opputunerry",
+      stage: "opportunity",
       type: "single",
       images: ["https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=500&fit=crop"],
       landingUrl: "https://www.tcs.com/contact-us",
@@ -253,9 +254,9 @@ export const adsByCompanyId: Record<string, AdCreative[]> = {
       ctaLabel: "Browse industries",
     },
     {
-      id: "infosys-opputunerry-1",
+      id: "infosys-opportunity-1",
       companyId: "infosys",
-      stage: "opputunerry",
+      stage: "opportunity",
       type: "single",
       images: ["https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=500&fit=crop"],
       landingUrl: "https://www.infosys.com/contact.html",

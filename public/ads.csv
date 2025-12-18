@@ -1,31 +1,26 @@
-id,companyId,stage,type,images,landingUrl,ctaLabel
-apple-unware-1,apple,unware,single,https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800&h=500&fit=crop,https://www.apple.com/iphone/,Learn more
-apple-ware-1,apple,ware,single,https://images.unsplash.com/photo-1512499617640-c2f999098c01?w=800&h=500&fit=crop,https://www.apple.com/iphone/,See highlights
-apple-consideration-1,apple,consideration,carousel,https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1512499617640-c2f999098c01?w=800&h=500&fit=crop,https://www.apple.com/iphone/,See models
-apple-opputunerry-1,apple,opputunerry,single,https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=500&fit=crop,https://www.apple.com/shop/buy-iphone,Buy now
-apple-customer-1,apple,customer,carousel,https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800&h=500&fit=crop,https://support.apple.com/,Get support
-
-google-unware-1,google,unware,single,https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop,https://cloud.google.com/,Explore Google Cloud
-google-ware-1,google,ware,single,https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800&h=500&fit=crop,https://cloud.google.com/,See solutions
-google-consideration-1,google,consideration,carousel,https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=500&fit=crop,https://cloud.google.com/products,Compare products
-google-opputunerry-1,google,opputunerry,single,https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800&h=500&fit=crop,https://cloud.google.com/products/ai,Get started
-google-customer-1,google,customer,single,https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop,https://cloud.google.com/support,Contact support
-
-microsoft-unware-1,microsoft,unware,single,https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-copilot,Try Copilot
-microsoft-ware-1,microsoft,ware,single,https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-copilot,Watch demo
-microsoft-consideration-1,microsoft,consideration,carousel,https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-365/business,See plans
-microsoft-opputunerry-1,microsoft,opputunerry,single,https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-365,Start trial
-microsoft-customer-1,microsoft,customer,carousel,https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-365,Upgrade now
-
-tcs-unware-1,tcs,unware,single,https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=500&fit=crop,https://www.tcs.com/,Discover services
-tcs-ware-1,tcs,ware,single,https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop,https://www.tcs.com/services,View offerings
-tcs-consideration-1,tcs,consideration,carousel,https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=500&fit=crop,https://www.tcs.com/what-we-do,Explore use-cases
-tcs-opputunerry-1,tcs,opputunerry,single,https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=500&fit=crop,https://www.tcs.com/contact-us,Talk to sales
-tcs-customer-1,tcs,customer,single,https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=500&fit=crop,https://www.tcs.com/insights,Read insights
-
-infosys-unware-1,infosys,unware,single,https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=500&fit=crop,https://www.infosys.com/,Visit Infosys
-infosys-ware-1,infosys,ware,single,https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=500&fit=crop,https://www.infosys.com/services.html,See services
-infosys-consideration-1,infosys,consideration,carousel,https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=500&fit=crop,https://www.infosys.com/industries.html,Browse industries
-infosys-opputunerry-1,infosys,opputunerry,single,https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=500&fit=crop,https://www.infosys.com/contact.html,Contact us
-infosys-customer-1,infosys,customer,single,https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop,https://www.infosys.com/insights.html,Customer stories
-
+id,companyId,stage,type,images,landingUrl,ctaLabel,ctaHeading
+apple-unware-1,apple,unware,single,https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800&h=500&fit=crop,https://www.apple.com/iphone/,Learn more,Discover the new iPhone 15
+apple-ware-1,apple,ware,single,https://images.unsplash.com/photo-1512499617640-c2f999098c01?w=800&h=500&fit=crop,https://www.apple.com/iphone/,See highlights,Experience iPhone innovation
+apple-consideration-1,apple,consideration,carousel,https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1512499617640-c2f999098c01?w=800&h=500&fit=crop,https://www.apple.com/iphone/,See models,Compare iPhone models
+apple-opportunity-1,apple,opportunity,single,https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=500&fit=crop,https://www.apple.com/shop/buy-iphone,Buy now,Buy iPhone now and save
+apple-customer-1,apple,customer,carousel,https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800&h=500&fit=crop,https://support.apple.com/,Get support,Get Apple Support 24/7
+google-unware-1,google,unware,single,https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop,https://cloud.google.com/,Explore Google Cloud,Transform your business with Google Cloud
+google-ware-1,google,ware,single,https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800&h=500&fit=crop,https://cloud.google.com/,See solutions,Explore Google Cloud solutions
+google-consideration-1,google,consideration,carousel,https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=500&fit=crop,https://cloud.google.com/products,Compare products,Compare Google Cloud products
+google-opportunity-1,google,opportunity,single,https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800&h=500&fit=crop,https://cloud.google.com/products/ai,Get started,Start your Google Cloud journey today
+google-customer-1,google,customer,single,https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop,https://cloud.google.com/support,Contact support,Get expert Google Cloud support
+microsoft-unware-1,microsoft,unware,single,https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-copilot,Try Copilot,Meet your AI companion - Microsoft Copilot
+microsoft-ware-1,microsoft,ware,single,https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-copilot,Watch demo,See Microsoft Copilot in action
+microsoft-consideration-1,microsoft,consideration,carousel,https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-365/business,See plans,Choose your Microsoft 365 plan
+microsoft-opportunity-1,microsoft,opportunity,single,https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-365,Start trial,Try Microsoft 365 free for 30 days
+microsoft-customer-1,microsoft,customer,carousel,https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=500&fit=crop,https://www.microsoft.com/microsoft-365,Upgrade now,Upgrade to the latest Microsoft 365
+tcs-unware-1,tcs,unware,single,https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=500&fit=crop,https://www.tcs.com/,Discover services,Now Hiring: Senior Software Engineer
+tcs-ware-1,tcs,ware,single,https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop,https://www.tcs.com/services,View offerings,Join TCS - Build tomorrow's technology today
+tcs-consideration-1,tcs,consideration,carousel,https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=500&fit=crop,https://www.tcs.com/what-we-do,Explore use-cases,Explore TCS digital transformation services
+tcs-opportunity-1,tcs,opportunity,single,https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=500&fit=crop,https://www.tcs.com/contact-us,Talk to sales,Partner with TCS for business growth
+tcs-customer-1,tcs,customer,single,https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=500&fit=crop,https://www.tcs.com/insights,Read insights,TCS Success Stories - Client testimonials
+infosys-unware-1,infosys,unware,single,https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=500&fit=crop,https://www.infosys.com/,Visit Infosys,Now Hiring: UI/UX Developer
+infosys-ware-1,infosys,ware,single,https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=500&fit=crop,https://www.infosys.com/services.html,See services,Join Infosys - Shape the future of business
+infosys-consideration-1,infosys,consideration,carousel,https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop|https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=500&fit=crop,https://www.infosys.com/industries.html,Browse industries,Explore Infosys industry solutions
+infosys-opportunity-1,infosys,opportunity,single,https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=500&fit=crop,https://www.infosys.com/contact.html,Contact us,Partner with Infosys today
+infosys-customer-1,infosys,customer,single,https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop,https://www.infosys.com/insights.html,Customer stories,Read Infosys customer success stories
