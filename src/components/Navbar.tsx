@@ -1,114 +1,126 @@
-import { Search, Home, Users, Briefcase, MessageSquare, Bell, Grid3X3, ChevronDown } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useEffect, useMemo, useState } from "react";
+import { Button } from "@/components/ui/button";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { companies } from "@/data/companies";
+import type { JourneyStage } from "@/data/ads";
 
 interface NavbarProps {
   selectedCompany?: string | null;
   onCompanySelect?: (companyId: string | null) => void;
+  selectedJourneyStage?: JourneyStage | null;
+  onJourneyStageSelect?: (stage: JourneyStage) => void;
 }
+type JourneyStageValue = JourneyStage;
 
-const navItems = [
-  { icon: Home, label: "Home", active: true },
-  { icon: Users, label: "My Network" },
-  { icon: Briefcase, label: "Jobs" },
-  { icon: MessageSquare, label: "Messaging" },
-  { icon: Bell, label: "Notifications" },
+const JOURNEY_STAGES: Array<{ value: JourneyStageValue; label: string }> = [
+  { value: "unware", label: "Unware" },
+  { value: "ware", label: "Ware" },
+  { value: "consideration", label: "Consideration" },
+  { value: "opputunerry", label: "Opputunerry" },
+  { value: "customer", label: "Customer" },
 ];
 
-export const Navbar = ({ selectedCompany, onCompanySelect }: NavbarProps) => {
-  const currentCompany = companies.find((c) => c.id === selectedCompany);
+const normalizeCompanyValue = (companyId: string | null | undefined) => companyId ?? "all";
+const denormalizeCompanyValue = (value: string) => (value === "all" ? null : value);
+
+const DEFAULT_STAGE: JourneyStage = "unware";
+const normalizeStageValue = (stage: JourneyStage | null | undefined): JourneyStageValue => {
+  const v = stage ?? DEFAULT_STAGE;
+  return JOURNEY_STAGES.some((s) => s.value === v) ? v : DEFAULT_STAGE;
+};
+
+export const Navbar = ({
+  selectedCompany,
+  onCompanySelect,
+  selectedJourneyStage,
+  onJourneyStageSelect,
+}: NavbarProps) => {
+  const [logoError, setLogoError] = useState(false);
+  const appliedCompanyValue = normalizeCompanyValue(selectedCompany);
+  const appliedStageValue = normalizeStageValue(selectedJourneyStage);
+
+  const [draftCompanyValue, setDraftCompanyValue] = useState<string>(appliedCompanyValue);
+  const [draftStageValue, setDraftStageValue] = useState<JourneyStageValue>(appliedStageValue);
+
+  useEffect(() => {
+    setDraftCompanyValue(appliedCompanyValue);
+  }, [appliedCompanyValue]);
+
+  useEffect(() => {
+    setDraftStageValue(appliedStageValue);
+  }, [appliedStageValue]);
+
+  const isDirty = useMemo(() => {
+    return draftCompanyValue !== appliedCompanyValue || draftStageValue !== appliedStageValue;
+  }, [draftCompanyValue, appliedCompanyValue, draftStageValue, appliedStageValue]);
+
+  const handleApply = () => {
+    onCompanySelect?.(denormalizeCompanyValue(draftCompanyValue));
+    onJourneyStageSelect?.(draftStageValue);
+  };
 
   return (
     <nav className="sticky top-0 z-50 bg-card border-b border-border">
       <div className="max-w-[1128px] mx-auto px-4 h-[52px] flex items-center justify-between">
-        {/* Left section - Logo and Search */}
-        <div className="flex items-center gap-2">
-          <div className="w-[34px] h-[34px] bg-primary rounded flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-xl">in</span>
-          </div>
-          <div className="relative hidden sm:block">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input
-              placeholder="Search"
-              className="w-[280px] pl-9 h-[34px] bg-secondary border-none text-sm"
+        <div className="flex items-center gap-2 min-w-0">
+          {!logoError ? (
+            <img
+              src="/assets/linkedin-logo.png"
+              alt="Linkedin logo"
+              className="h-9 w-9 rounded-[10px] object-cover"
+              onError={() => setLogoError(true)}
             />
-          </div>
+          ) : (
+            <div className="h-9 w-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold select-none tracking-tight">
+              LM
+            </div>
+          )}
+          <span className="text-[15px] font-semibold text-foreground whitespace-nowrap">
+            Linkedin Mock Platform
+          </span>
         </div>
 
-        {/* Center/Right section - Navigation */}
-        <div className="flex items-center gap-1">
-          {navItems.map((item) => (
-            <button
-              key={item.label}
-              className={`flex flex-col items-center justify-center min-w-[80px] h-[52px] px-2 linkedin-hover ${
-                item.active
-                  ? "text-foreground border-b-2 border-foreground"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              <item.icon className="h-5 w-5" />
-              <span className="text-xs mt-0.5 hidden md:block">{item.label}</span>
-            </button>
-          ))}
+        <div className="flex items-center gap-2">
+          <div className="w-[180px]">
+            <Select value={draftStageValue} onValueChange={(v) => setDraftStageValue(v as JourneyStageValue)}>
+              <SelectTrigger className="h-9 bg-secondary border-0 shadow-none focus:ring-2 focus:ring-ring">
+                <SelectValue placeholder="Journey stage" />
+              </SelectTrigger>
+              <SelectContent>
+                {JOURNEY_STAGES.map((stage) => (
+                  <SelectItem key={stage.value} value={stage.value}>
+                    {stage.label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
 
-          {/* Company selector dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button className="flex flex-col items-center justify-center min-w-[100px] h-[52px] px-2 linkedin-hover text-muted-foreground hover:text-foreground border-l border-border">
-                {currentCompany ? (
-                  <Avatar className="h-6 w-6 bg-card">
-                    <AvatarImage src={currentCompany.logo} className="object-contain p-0.5" />
-                    <AvatarFallback className="text-[8px]">{currentCompany.initials}</AvatarFallback>
-                  </Avatar>
-                ) : (
-                  <Grid3X3 className="h-5 w-5" />
-                )}
-                <span className="text-xs mt-0.5 hidden md:flex items-center gap-0.5">
-                  {currentCompany ? currentCompany.name.split(" ")[0] : "Companies"} <ChevronDown className="h-3 w-3" />
-                </span>
-              </button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-56">
-              <DropdownMenuItem
-                onClick={() => onCompanySelect?.(null)}
-                className={!selectedCompany ? "bg-accent" : ""}
-              >
-                <Grid3X3 className="h-4 w-4 mr-2" />
-                All Companies
-              </DropdownMenuItem>
-              {companies.map((company) => (
-                <DropdownMenuItem
-                  key={company.id}
-                  onClick={() => onCompanySelect?.(company.id)}
-                  className={selectedCompany === company.id ? "bg-accent" : ""}
-                >
-                  <Avatar className="h-5 w-5 mr-2 bg-card">
-                    <AvatarImage src={company.logo} className="object-contain p-0.5" />
-                    <AvatarFallback className="text-[8px]">{company.initials}</AvatarFallback>
-                  </Avatar>
-                  {company.name}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <div className="w-[220px]">
+            <Select value={draftCompanyValue} onValueChange={setDraftCompanyValue}>
+              <SelectTrigger className="h-9 bg-secondary border-0 shadow-none focus:ring-2 focus:ring-ring">
+                <SelectValue placeholder="Company" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All companies</SelectItem>
+                {companies.map((company) => (
+                  <SelectItem key={company.id} value={company.id}>
+                    {company.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
 
-          {/* Profile dropdown */}
-          <button className="flex flex-col items-center justify-center min-w-[80px] h-[52px] px-2 linkedin-hover text-muted-foreground hover:text-foreground">
-            <Avatar className="h-6 w-6">
-              <AvatarImage src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" />
-              <AvatarFallback>JD</AvatarFallback>
-            </Avatar>
-            <span className="text-xs mt-0.5 hidden md:flex items-center gap-0.5">
-              Me <span className="text-[10px]">▼</span>
-            </span>
-          </button>
+          <Button size="sm" className="h-9 rounded-full px-5" onClick={handleApply} disabled={!isDirty}>
+            Apply
+          </Button>
         </div>
       </div>
     </nav>

@@ -4,13 +4,18 @@ import { Footer } from "@/components/Footer";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { FeedPost } from "@/components/FeedPost";
-import { getCompanyById, getPostsByCompanyId } from "@/data/companies";
+import { getCompanyById } from "@/data/companies";
+import { useCompanyPostsFromCsv } from "@/data/companyPostsCsv";
+import { useAdsFromCsv } from "@/data/adsCsv";
 import { Globe, Users, MapPin, Building2, ExternalLink, ArrowLeft } from "lucide-react";
 
 const CompanyProfile = () => {
   const { companyId } = useParams<{ companyId: string }>();
   const company = getCompanyById(companyId || "");
-  const posts = getPostsByCompanyId(companyId || "");
+  const { posts: allPosts, loading: postsLoading, error: postsError } = useCompanyPostsFromCsv();
+  const { adsByCompanyId } = useAdsFromCsv();
+  const posts = allPosts.filter((p) => p.companyId === (companyId || ""));
+  const defaultStage = "unware";
 
   if (!company) {
     return (
@@ -135,8 +140,23 @@ const CompanyProfile = () => {
                   comments={post.comments}
                   reposts={post.reposts}
                   isSponsored={post.isSponsored}
+                  companyId={post.companyId}
+                  ad={
+                    post.isSponsored
+                      ? (adsByCompanyId[post.companyId] ?? []).find((a) => a.stage === defaultStage) ??
+                        (adsByCompanyId[post.companyId] ?? [])[0]
+                      : undefined
+                  }
                 />
               ))
+            ) : postsLoading ? (
+              <div className="linkedin-card p-6 text-center text-muted-foreground">
+                Loading posts…
+              </div>
+            ) : postsError ? (
+              <div className="linkedin-card p-6 text-center text-destructive">
+                Failed to load posts from CSV: {postsError}
+              </div>
             ) : (
               <div className="linkedin-card p-6 text-center text-muted-foreground">
                 No posts yet

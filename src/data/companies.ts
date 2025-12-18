@@ -11,6 +11,12 @@ export interface Company {
   about: string;
   coverImage: string;
   followers: number;
+  ceo: {
+    name: string;
+    title: string;
+    avatar: string;
+    initials: string;
+  };
 }
 
 export interface CompanyPost {
@@ -38,6 +44,12 @@ export const companies: Company[] = [
     about: "Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world's largest technology company by revenue and the world's most valuable company.",
     coverImage: "https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=1200&h=400&fit=crop",
     followers: 18500000,
+    ceo: {
+      name: "Taylor Reed",
+      title: "CEO, Apple",
+      avatar: "https://api.dicebear.com/7.x/initials/svg?seed=TR",
+      initials: "TR",
+    },
   },
   {
     id: "google",
@@ -52,6 +64,12 @@ export const companies: Company[] = [
     about: "Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, and e-commerce.",
     coverImage: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=1200&h=400&fit=crop",
     followers: 32400000,
+    ceo: {
+      name: "Priya Shah",
+      title: "CEO, Google",
+      avatar: "https://api.dicebear.com/7.x/initials/svg?seed=PS",
+      initials: "PS",
+    },
   },
   {
     id: "microsoft",
@@ -66,6 +84,12 @@ export const companies: Company[] = [
     about: "Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. Microsoft's best-known software products are Windows, Microsoft 365, and Azure.",
     coverImage: "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=1200&h=400&fit=crop",
     followers: 21800000,
+    ceo: {
+      name: "Daniel Kim",
+      title: "CEO, Microsoft",
+      avatar: "https://api.dicebear.com/7.x/initials/svg?seed=DK",
+      initials: "DK",
+    },
   },
   {
     id: "tcs",
@@ -80,6 +104,12 @@ export const companies: Company[] = [
     about: "Tata Consultancy Services is an Indian multinational information technology services and consulting company. It is part of the Tata Group and operates in 150 locations across 46 countries.",
     coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=400&fit=crop",
     followers: 12300000,
+    ceo: {
+      name: "Ananya Iyer",
+      title: "CEO, TCS",
+      avatar: "https://api.dicebear.com/7.x/initials/svg?seed=AI",
+      initials: "AI",
+    },
   },
   {
     id: "infosys",
@@ -94,6 +124,12 @@ export const companies: Company[] = [
     about: "Infosys Limited is an Indian multinational information technology company that provides business consulting, information technology and outsourcing services.",
     coverImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=400&fit=crop",
     followers: 8700000,
+    ceo: {
+      name: "Rahul Nair",
+      title: "CEO, Infosys",
+      avatar: "https://api.dicebear.com/7.x/initials/svg?seed=RN",
+      initials: "RN",
+    },
   },
 ];
 
