@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Building2, Users } from "lucide-react";
+import { Building2, Users, Bookmark, UsersRound, Newspaper, Calendar } from "lucide-react";
 import { companies, getCompanyById } from "@/data/companies";
 
 type ProfileCardProps = {
@@ -56,6 +56,40 @@ export const ProfileCard = ({ companyId }: ProfileCardProps) => {
       </div>
 
       <div className="linkedin-divider" />
+
+      {/* Stats */}
+      <div className="p-3 text-xs">
+        <div className="flex justify-between items-center linkedin-hover p-1 -mx-1 rounded cursor-pointer">
+          <span className="text-muted-foreground">Profile viewers</span>
+          <span className="text-primary font-semibold">52</span>
+        </div>
+        <div className="flex justify-between items-center linkedin-hover p-1 -mx-1 rounded cursor-pointer">
+          <span className="text-muted-foreground">Post impressions</span>
+          <span className="text-primary font-semibold">119</span>
+        </div>
+      </div>
+
+      <div className="linkedin-divider" />
+
+      {/* Quick Links */}
+      <div className="p-3">
+        <button className="flex items-center gap-2 text-xs text-muted-foreground linkedin-hover p-1 -mx-1 rounded w-full text-left">
+          <Bookmark className="h-4 w-4" />
+          <span>Saved items</span>
+        </button>
+        <button className="flex items-center gap-2 text-xs text-muted-foreground linkedin-hover p-1 -mx-1 rounded w-full text-left mt-1">
+          <UsersRound className="h-4 w-4" />
+          <span>Groups</span>
+        </button>
+        <button className="flex items-center gap-2 text-xs text-muted-foreground linkedin-hover p-1 -mx-1 rounded w-full text-left mt-1">
+          <Newspaper className="h-4 w-4" />
+          <span>Newsletters</span>
+        </button>
+        <button className="flex items-center gap-2 text-xs text-muted-foreground linkedin-hover p-1 -mx-1 rounded w-full text-left mt-1">
+          <Calendar className="h-4 w-4" />
+          <span>Events</span>
+        </button>
+      </div>
     </div>
   );
 };

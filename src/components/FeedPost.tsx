@@ -89,34 +89,15 @@ export const FeedPost = ({
             <div>
               {AuthorName}
               <p className="text-xs text-muted-foreground line-clamp-1">
-                {author.title}
+               Promoted
               </p>
-              <p className="text-xs text-muted-foreground flex items-center gap-1">
-                {timeAgo}
-                <span aria-hidden="true">·</span>
-                <Globe className="h-3 w-3" />
-                {isSponsored && (
-                  <>
-                    <span aria-hidden="true">·</span>
-                    <span className="inline-flex items-center gap-1">
-                      <Sparkles className="h-3 w-3" />
-                      Promoted
-                    </span>
-                    {stageLabel ? (
-                      <>
-                        <span aria-hidden="true">·</span>
-                        <span>{stageLabel}</span>
-                      </>
-                    ) : null}
-                    {adTypeLabel ? (
-                      <>
-                        <span aria-hidden="true">·</span>
-                        <span>{adTypeLabel}</span>
-                      </>
-                    ) : null}
-                  </>
-                )}
-              </p>
+              {!isSponsored && (
+                <p className="text-xs text-muted-foreground flex items-center gap-1">
+                  {timeAgo}
+                  <span aria-hidden="true">·</span>
+                  <Globe className="h-3 w-3" />
+                </p>
+              )}
             </div>
           </div>
           <button className="p-2 rounded-full linkedin-hover text-muted-foreground">
@@ -138,11 +119,13 @@ export const FeedPost = ({
               <CarouselContent className="ml-0">
                 {creativeImages.map((src, idx) => (
                   <CarouselItem key={`${src}-${idx}`} className="pl-0">
-                    <img
-                      src={src}
-                      alt={`Ad creative ${idx + 1}`}
-                      className="w-full object-cover max-h-[520px]"
-                    />
+                    <div className="w-full aspect-square overflow-hidden">
+                      <img
+                        src={src}
+                        alt={`Ad creative ${idx + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
@@ -150,11 +133,13 @@ export const FeedPost = ({
               <CarouselNext className="right-3 top-1/2 -translate-y-1/2" />
             </Carousel>
           ) : (
-            <img
-              src={creativeImages[0]}
-              alt="Post content"
-              className="w-full object-cover max-h-[520px]"
-            />
+            <div className="w-full aspect-square overflow-hidden">
+              <img
+                src={creativeImages[0]}
+                alt="Post content"
+                className="w-full h-full object-cover"
+              />
+            </div>
           )}
         </div>
       )}

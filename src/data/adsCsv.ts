@@ -66,7 +66,7 @@ const toAdType = (value: string): AdType => {
 const toStage = (value: string): JourneyStage => {
   const v = value.trim().toLowerCase();
   // keep strict but safe
-  if (v === "unware" || v === "ware" || v === "consideration" || v === "opputunerry" || v === "customer") {
+  if (v === "unware" || v === "ware" || v === "consideration" || v === "opportunity" || v === "customer") {
     return v;
   }
   return "unware";
@@ -90,6 +90,7 @@ export async function loadAdsFromCsv(csvUrl = "/ads.csv"): Promise<AdCreative[]>
     if (rows.length < 2) return [];
 
     const header = rows[0].map((h) => h.trim());
+    console.log("📋 CSV Header:", header);
     const idx = (name: string) => header.findIndex((h) => h.toLowerCase() === name.toLowerCase());
 
     const idIdx = idx("id");
@@ -99,6 +100,11 @@ export async function loadAdsFromCsv(csvUrl = "/ads.csv"): Promise<AdCreative[]>
     const imagesIdx = idx("images");
     const landingUrlIdx = idx("landingUrl");
     const ctaLabelIdx = idx("ctaLabel");
+    const ctaHeadingIdx = idx("ctaHeading");
+    
+    console.log("📊 Column indexes:", {
+      idIdx, companyIdIdx, stageIdx, typeIdx, imagesIdx, landingUrlIdx, ctaLabelIdx, ctaHeadingIdx
+    });
 
     const ads: AdCreative[] = [];
     for (const r of rows.slice(1)) {
@@ -107,14 +113,29 @@ export async function loadAdsFromCsv(csvUrl = "/ads.csv"): Promise<AdCreative[]>
       if (!companyId || !landingUrl) continue;
 
       const id = (r[idIdx] ?? "").trim() || `${companyId}-${r[stageIdx] ?? "unware"}-${ads.length + 1}`;
+      const stage = toStage(r[stageIdx] ?? "");
+      const ctaHeading = (r[ctaHeadingIdx] ?? "").trim();
+      
+      // Debug logging for unware stage
+      if (stage === "unware") {
+        console.log(`🔍 Parsing unware ad:`, {
+          id,
+          companyId,
+          stage,
+          rawRow: r,
+          headerIndexes: { idIdx, companyIdIdx, stageIdx }
+        });
+      }
+      
       ads.push({
         id,
         companyId,
-        stage: toStage(r[stageIdx] ?? ""),
+        stage,
         type: toAdType(r[typeIdx] ?? ""),
         images: toImages(r[imagesIdx] ?? ""),
         landingUrl,
         ctaLabel: (r[ctaLabelIdx] ?? "").trim() || "Learn more",
+        ...(ctaHeading && { ctaHeading }),
       });
     }
 
