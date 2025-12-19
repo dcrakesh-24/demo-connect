@@ -11,6 +11,7 @@ import Template3 from "./pages/landing/Template3";
 import Template4 from "./pages/landing/Template4";
 import Template5 from "./pages/landing/Template5";
 import Template6 from "./pages/landing/Template6";
+import CrudDemo from "./pages/CrudDemo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/template-4" element={<Template4 />} />
           <Route path="/template-5" element={<Template5 />} />
           <Route path="/template-6" element={<Template6 />} />
+          <Route path="/crud-demo" element={<CrudDemo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
