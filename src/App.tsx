@@ -26,10 +26,10 @@ const App = () => (
           <Route path="/company/:companyId" element={<CompanyProfile />} />
           <Route path="/template-1" element={<Template1 />} />
           <Route path="/template-2" element={<Template2 />} />
-          <Route path="/template-3" element={<Template3 />} />
-          <Route path="/template-4" element={<Template4 />} />
-          <Route path="/template-5" element={<Template5 />} />
-          <Route path="/template-6" element={<Template6 />} />
+          {/* <Route path="/template-3" element={<Template3 />} /> */}
+          <Route path="/template-3" element={<Template4 />} />
+          {/* <Route path="/template-5" element={<Template5 />} /> */}
+          <Route path="/template-4" element={<Template6 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

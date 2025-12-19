@@ -1,11 +1,11 @@
 section,field,value,type
-header,logoUrl,https://img.pikbest.com/png-images/20241022/stealth-masked-hacker-gaming-logo-for-gamers_10991543.png!w700wp,string
+header,logoUrl,https://png.pngtree.com/png-clipart/20190611/original/pngtree-wolf-logo-png-image_2306634.jpg,string
 header,backgroundColor,#FFFFFF,color
 header,textColor,#000000,color
 hero,companyName,General Motors,string
 hero,headline,Hey General Motors,,string
 hero,highlightedText,75% Higher Conversion Rates!,string
-hero,subheadline,Boost Your Business by Reaching Local sdfdsaew wef w Customers with\nUse 'Near Me' Searches To\nYour Advantage.,string
+hero,subheadline,"Boost Your Business by Reaching Local Customers with\nUse 'Near Me' Searches To\nYour Advantage.",string
 hero,ctaButtonText,Start My Free Trial,string
 hero,ctaButtonLink,#,string
 hero,backgroundColor,#011A65,color
@@ -14,7 +14,7 @@ hero,highlightedTextColor,#FF6B35,color
 hero,ctaButtonColor,#00d4ff,color
 hero,ctaButtonHoverColor,#00b8e6,color
 hero,graphicBackgroundImage,https://lscdn.blob.core.windows.net/content/c/smart-pm/img/client-logo-bg.png,string
-hero,companyLogo,https://img.pikbest.com/png-images/20241022/stealth-masked-hacker-gaming-logo-for-gamers_10991543.png!w700wp,string
+hero,companyLogo,https://lscdn.blob.core.windows.net/content/c/smart-pm/img/general_motors.png,string
 intro,title,Hey General Motors,,string
 intro,description,"Are you looking for one ultimate solution to ignite your business's potential? With ProManage.biz, you can conquer the hyperlocal marketing realm. Streamline all your Google listings in one dashboard. Our core features include direct API integration with leading search engines and custom microsites for each location. NAP consistency and BVN tracking. We also offer reputation management, AI-assisted review responses, duplicate listing audit, and CRM integration. ALL FOR ZERO MEDIA COST!",string
 intro,ctaButtonText,Talk To Us,string
