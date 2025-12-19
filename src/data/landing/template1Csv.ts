@@ -197,3 +197,6 @@ export function getTemplate1Data(): LandingPageData | null {
   return template1DataCache;
 }
 
+
+
+

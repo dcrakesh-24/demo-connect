@@ -187,3 +187,6 @@ hero,backgroundColor,#FF0000,color
 
 The change will be reflected immediately after reloading the page.
 
+
+
+

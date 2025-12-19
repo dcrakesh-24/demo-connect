@@ -173,3 +173,6 @@ export function getTemplate2Data(): Template2Data | null {
   return template2DataCache;
 }
 
+
+
+

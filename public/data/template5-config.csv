@@ -1,0 +1,55 @@
+section,field,value,type
+header,logoUrl,https://avatars.githubusercontent.com/u/807036?s=280&v=4,string
+header,logoText,U,string
+header,userName,Stacy,string
+header,backgroundColor,#FFFFFF,color
+header,textColor,#000000,color
+header,buttonColor,#FF6B35,color
+header,buttonHoverColor,#E55A2B,color
+header,learnMoreButtonText,Learn more,string
+header,learnMoreButtonLink,#,string
+header,registerButtonText,Register,string
+header,registerButtonLink,#,string
+hero,primaryLogoUrl,https://avatars.githubusercontent.com/u/807036?s=280&v=4,string
+hero,primaryLogoAlt,Userled Logo,string
+hero,secondaryLogoUrl,https://avatars.githubusercontent.com/u/807036?s=280&v=4,string
+hero,secondaryLogoAlt,Secondary Logo,string
+hero,location,The Phoenician Scottsdale,string
+hero,dates,February 24th - 26th,string
+hero,greeting,Stacy, let's meet at the B2B Marketing Exchange,string
+hero,highlightedName,Stacy,string
+hero,boothInfo,The Userled team will be at Booth 418! Register for a time slot or drop by to say hello and chat about:,string
+hero,boothNumber,418,string
+hero,description,,string
+hero,topic1,How AI is Transforming ABM,string
+hero,topic2,Scaling your ABM content without the overhead,string
+hero,ctaButtonText,Chat with us!,string
+hero,ctaButtonLink,#,string
+hero,teamMember1_name,Yann Sarfati,string
+hero,teamMember1_title,CEO @ Userled,string
+hero,teamMember1_avatarUrl,https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150,string
+hero,teamMember2_name,Charlotte Stone,string
+hero,teamMember2_title,GTM @ Userled,string
+hero,teamMember2_avatarUrl,https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150,string
+hero,teamMember3_name,Joe McAuliffe,string
+hero,teamMember3_title,Growth Lead @ Userled,string
+hero,teamMember3_avatarUrl,https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150,string
+hero,resortImageUrl,https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200,string
+hero,backgroundColor,#1E40AF,color
+hero,textColor,#FFFFFF,color
+hero,highlightedTextColor,#FCD34D,color
+hero,buttonColor,#FF6B35,color
+hero,buttonHoverColor,#E55A2B,color
+marketplaceMap,title,Find us here,string
+marketplaceMap,mapImageUrl,https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200,string
+marketplaceMap,boothNumber,418,string
+marketplaceMap,boothLocation,Upper-left section,string
+marketplaceMap,backgroundColor,#FFFFFF,color
+marketplaceMap,textColor,#000000,color
+footer,text,Find us here,string
+footer,backgroundColor,#FFFFFF,color
+footer,textColor,#000000,color
+
+
+
+

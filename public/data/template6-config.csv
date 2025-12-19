@@ -1,0 +1,139 @@
+section,field,value,type
+header,logoUrl,,string
+header,logoText,Userled,string
+header,navAboutText,About Event,string
+header,navAboutHref,#about,string
+header,navBoothText,Find Our Booth,string
+header,navBoothHref,#booth,string
+header,navTeamText,Meet the Team,string
+header,navTeamHref,#team,string
+header,ctaButtonText,Book a Meeting,string
+header,ctaButtonLink,#,string
+header,backgroundColor,#FFFFFF,color
+header,logoGradientFrom,hsl(262,83%,58%),color
+header,logoGradientTo,hsl(292,84%,61%),color
+hero,badge,B2B Marketing Exchange 2025,string
+hero,highlightedName,Stacy,string
+hero,greeting,let's meet at the B2B Marketing Exchange,string
+hero,description,,string
+hero,boothInfo,The Userled team will be at Booth 418! Register for a time slot or drop by to say hello and chat about:,string
+hero,topic1,How AI is Transforming ABM,string
+hero,topic2,Scaling your ABM content without the overhead,string
+hero,eventDate,February 24th - 26th,string
+hero,eventYear,2025,string
+hero,venueName,The Phoenician,string
+hero,venueLocation,Scottsdale,string
+hero,boothNumber,418,string
+hero,boothLocation,Exhibition Hall A,string
+hero,primaryCtaText,Chat with us!,string
+hero,primaryCtaLink,#,string
+hero,secondaryCtaText,Learn More,string
+hero,secondaryCtaLink,#,string
+hero,socialProof,500+ meetings booked at last year's event,string
+hero,resortImageUrl,https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200,string
+hero,teamMember1_name,Yann Sarfati,string
+hero,teamMember1_title,CEO @ Userled,string
+hero,teamMember1_avatarUrl,https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150,string
+hero,teamMember2_name,Joe McAuliffe,string
+hero,teamMember2_title,Growth Lead @ Userled,string
+hero,teamMember2_avatarUrl,https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150,string
+hero,teamMember3_name,Charlotte Stone,string
+hero,teamMember3_title,GTM @ Userled,string
+hero,teamMember3_avatarUrl,https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150,string
+hero,backgroundColor,#1E40AF,color
+hero,highlightedTextColor,#FCD34D,color
+hero,badgeColor,hsl(262,83%,58%),color
+hero,gradientFrom,hsl(262,83%,58%),color
+hero,gradientTo,hsl(292,84%,61%),color
+features,badge,What We'll Discuss,string
+features,title,The Future of B2B Marketing,string
+features,description,Join us for insights on transforming your marketing strategy with cutting-edge AI technology.,string
+features,feature1_icon,Sparkles,string
+features,feature1_title,AI-Powered ABM,string
+features,feature1_description,Discover how artificial intelligence is revolutionizing account-based marketing strategies.,string
+features,feature2_icon,Target,string
+features,feature2_title,Precision Targeting,string
+features,feature2_description,Learn to identify and engage high-value accounts with unprecedented accuracy.,string
+features,feature3_icon,Users,string
+features,feature3_title,Personalization at Scale,string
+features,feature3_description,Scale your personalized content without increasing your team's workload.,string
+features,feature4_icon,Zap,string
+features,feature4_title,Real-time Insights,string
+features,feature4_description,Get instant feedback on campaign performance and buyer intent signals.,string
+features,backgroundColor,#FFFFFF,color
+features,badgeColor,hsl(262,83%,58%),color
+boothMap,badge,Find Us Easily,string
+boothMap,title,We're at Booth 418,string
+boothMap,description,Located in the heart of the exhibition hall, our booth is designed for meaningful conversations. Stop by for a live demo, grab some swag, or simply say hello!,string
+boothMap,locationTitle,Exhibition Hall A,string
+boothMap,locationDescription,The Phoenician Resort, Scottsdale, Arizona,string
+boothMap,directionsTitle,Easy to Find,string
+boothMap,directionsDescription,Enter from the main entrance, turn right past registration,string
+boothMap,ctaButtonText,Get Directions,string
+boothMap,ctaButtonLink,#,string
+boothMap,mapImageUrl,https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200,string
+boothMap,boothNumber,418,string
+boothMap,backgroundColor,#F5F5F5,color
+boothMap,badgeColor,hsl(262,83%,58%),color
+team,badge,The Team,string
+team,title,Meet the Userled Team,string
+team,description,Our experts are ready to help you transform your ABM strategy.,string
+team,member1_name,Yann Sarfati,string
+team,member1_role,CEO & Co-founder,string
+team,member1_bio,Serial entrepreneur with 15+ years in B2B marketing technology.,string
+team,member1_initials,YS,string
+team,member1_linkedinUrl,#,string
+team,member1_twitterUrl,#,string
+team,member2_name,Joe McAuliffe,string
+team,member2_role,Growth Lead,string
+team,member2_bio,Former head of growth at multiple Y Combinator startups.,string
+team,member2_initials,JM,string
+team,member2_linkedinUrl,#,string
+team,member2_twitterUrl,#,string
+team,member3_name,Charlotte Stone,string
+team,member3_role,GTM Strategy,string
+team,member3_bio,Expert in go-to-market strategy for enterprise SaaS companies.,string
+team,member3_initials,CS,string
+team,member3_linkedinUrl,#,string
+team,member3_twitterUrl,#,string
+team,backgroundColor,#FFFFFF,color
+team,badgeColor,hsl(262,83%,58%),color
+cta,title,Ready to Transform Your ABM Strategy?,string
+cta,description,Book your exclusive meeting slot now and be among the first to experience our AI-powered marketing platform.,string
+cta,benefit1,Live product demo,string
+cta,benefit2,Exclusive swag,string
+cta,benefit3,ABM strategy session,string
+cta,benefit4,Networking opportunities,string
+cta,primaryCtaText,Book Your Meeting,string
+cta,primaryCtaLink,#,string
+cta,secondaryCtaText,Contact Us,string
+cta,secondaryCtaLink,#,string
+cta,trustText,Limited slots available • No commitment required,string
+cta,backgroundColor,#000000,color
+cta,textColor,#FFFFFF,color
+findUs,title,Find us here,string
+findUs,imageUrl,/assets/findus.png,string
+findUs,backgroundColor,#FFFFFF,color
+footer,logoText,Userled,string
+footer,description,AI-powered personalization platform for B2B marketing teams.,string
+footer,socialLinkedin,#,string
+footer,socialTwitter,#,string
+footer,socialYoutube,#,string
+footer,productFeatures,#,string
+footer,productPricing,#,string
+footer,productIntegrations,#,string
+footer,productCaseStudies,#,string
+footer,companyAbout,#,string
+footer,companyCareers,#,string
+footer,companyBlog,#,string
+footer,companyPress,#,string
+footer,contactEmail,hello@userled.io,string
+footer,contactSupport,#,string
+footer,contactDocumentation,#,string
+footer,legalPrivacy,#,string
+footer,legalTerms,#,string
+footer,legalCookie,#,string
+footer,copyright,© 2025 Userled. All rights reserved.,string
+footer,backgroundColor,#FFFFFF,color
+footer,borderColor,#E5E5E5,color
+

@@ -9,6 +9,8 @@ import Template1 from "./pages/landing/Template1";
 import Template2 from "./pages/landing/Template2";
 import Template3 from "./pages/landing/Template3";
 import Template4 from "./pages/landing/Template4";
+import Template5 from "./pages/landing/Template5";
+import Template6 from "./pages/landing/Template6";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/template-2" element={<Template2 />} />
           <Route path="/template-3" element={<Template3 />} />
           <Route path="/template-4" element={<Template4 />} />
+          <Route path="/template-5" element={<Template5 />} />
+          <Route path="/template-6" element={<Template6 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
