@@ -6,24 +6,49 @@
 import { loadCsvFile } from "@/lib/csvParser";
 import type { Template2Data, UsefulInfoCard } from "./template2";
 
-let template2DataCache: Template2Data | null = null;
-let template2Promise: Promise<Template2Data> | null = null;
+let template2DataCache: Record<string, Template2Data> = {};
+let template2Promises: Record<string, Promise<Template2Data>> = {};
+
+/**
+ * Clear Template2 data cache (useful for development/reloads)
+ */
+export function clearTemplate2Cache(companyId?: string): void {
+  if (companyId) {
+    delete template2DataCache[companyId];
+    delete template2Promises[companyId];
+  } else {
+    template2DataCache = {};
+    template2Promises = {};
+  }
+}
 
 /**
  * Load Template2 data from CSV
+ * @param companyId - Company ID to load company-specific data. Falls back to default if not provided.
+ * @param forceReload - If true, clears cache and forces reload
  */
-export async function loadTemplate2Data(): Promise<Template2Data> {
-  if (template2DataCache) {
-    return template2DataCache;
+export async function loadTemplate2Data(companyId?: string, forceReload: boolean = false): Promise<Template2Data> {
+  const cacheKey = companyId || 'default';
+  
+  if (forceReload) {
+    clearTemplate2Cache(companyId);
   }
 
-  if (template2Promise) {
-    return template2Promise;
+  if (template2DataCache[cacheKey] && !forceReload) {
+    return template2DataCache[cacheKey];
   }
 
-  template2Promise = (async () => {
+  if (template2Promises[cacheKey] && !forceReload) {
+    return template2Promises[cacheKey];
+  }
+
+  template2Promises[cacheKey] = (async () => {
     try {
-      const csvData = await loadCsvFile("/data/template2-config.csv");
+      // Use company-specific CSV if companyId is provided, otherwise use default
+      const csvFileName = companyId 
+        ? `after-meeting-${companyId}-config.csv`
+        : 'template2-config.csv';
+      const csvData = await loadCsvFile(`/data/${csvFileName}`);
       
       // Extract useful info cards
       const cards: UsefulInfoCard[] = [];
@@ -155,22 +180,25 @@ export async function loadTemplate2Data(): Promise<Template2Data> {
         },
       };
 
-      template2DataCache = data;
+      template2DataCache[cacheKey] = data;
       return data;
     } catch (error) {
       console.error('Error loading Template2 CSV data:', error);
+      // Remove failed promise so it can be retried
+      delete template2Promises[cacheKey];
       throw error;
     }
   })();
 
-  return template2Promise;
+  return template2Promises[cacheKey];
 }
 
 /**
  * Get Template2 data (synchronous access to cache)
  */
-export function getTemplate2Data(): Template2Data | null {
-  return template2DataCache;
+export function getTemplate2Data(companyId?: string): Template2Data | null {
+  const cacheKey = companyId || 'default';
+  return template2DataCache[cacheKey] || null;
 }
 
 

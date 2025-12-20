@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import {
   Header,
   HeroSection,
@@ -27,18 +28,20 @@ import type { Template6Data } from "@/data/landing/template6";
  * All data, colors, logos, and text are configurable via template6-config.csv.
  */
 const Template6 = () => {
+  const [searchParams] = useSearchParams();
+  const companyId = searchParams.get('companyId') || undefined;
   const [data, setData] = useState<Template6Data | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     // Clear cache on mount to ensure fresh data from CSV
-    clearTemplate6Cache();
+    clearTemplate6Cache(companyId);
     
     const loadData = async () => {
       try {
         // Force reload by clearing cache
-        const loadedData = await loadTemplate6Data(true);
+        const loadedData = await loadTemplate6Data(companyId, true);
         setData(loadedData);
         setLoading(false);
       } catch (err) {
@@ -48,7 +51,7 @@ const Template6 = () => {
     };
     
     loadData();
-  }, []);
+  }, [companyId]);
 
   if (loading) {
     return (

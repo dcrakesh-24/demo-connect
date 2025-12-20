@@ -6,38 +6,50 @@
 import { loadCsvFile } from "@/lib/csvParser";
 import type { Template4Data, TableOfContentsItem, BlogArticleSection, FooterColumn } from "./template4";
 
-let template4DataCache: Template4Data | null = null;
-let template4Promise: Promise<Template4Data> | null = null;
+let template4DataCache: Record<string, Template4Data> = {};
+let template4Promises: Record<string, Promise<Template4Data>> = {};
 
 /**
  * Clear Template4 data cache (useful for development/reloads)
  */
-export function clearTemplate4Cache(): void {
-  template4DataCache = null;
-  template4Promise = null;
+export function clearTemplate4Cache(companyId?: string): void {
+  if (companyId) {
+    delete template4DataCache[companyId];
+    delete template4Promises[companyId];
+  } else {
+    template4DataCache = {};
+    template4Promises = {};
+  }
 }
 
 /**
  * Load Template4 data from CSV
+ * @param companyId - Company ID to load company-specific data. Falls back to default if not provided.
  * @param forceReload - If true, clears cache and forces reload
  */
-export async function loadTemplate4Data(forceReload: boolean = false): Promise<Template4Data> {
+export async function loadTemplate4Data(companyId?: string, forceReload: boolean = false): Promise<Template4Data> {
+  const cacheKey = companyId || 'default';
+  
   if (forceReload) {
-    clearTemplate4Cache();
+    clearTemplate4Cache(companyId);
   }
 
-  if (template4DataCache && !forceReload) {
-    return template4DataCache;
+  if (template4DataCache[cacheKey] && !forceReload) {
+    return template4DataCache[cacheKey];
   }
 
-  if (template4Promise && !forceReload) {
-    return template4Promise;
+  if (template4Promises[cacheKey] && !forceReload) {
+    return template4Promises[cacheKey];
   }
 
-  template4Promise = (async () => {
+  template4Promises[cacheKey] = (async () => {
     try {
       const timestamp = new Date().getTime();
-      const csvData = await loadCsvFile(`/data/template4-config.csv?t=${timestamp}`);
+      // Use company-specific CSV if companyId is provided, otherwise use default
+      const csvFileName = companyId 
+        ? `blog-${companyId}-config.csv`
+        : 'template4-config.csv';
+      const csvData = await loadCsvFile(`/data/${csvFileName}?t=${timestamp}`);
       
       // Extract navigation links
       const navLinks = [];
@@ -208,21 +220,24 @@ export async function loadTemplate4Data(forceReload: boolean = false): Promise<T
         },
       };
 
-      template4DataCache = data;
+      template4DataCache[cacheKey] = data;
       return data;
     } catch (error) {
       console.error('Error loading Template4 CSV data:', error);
+      // Remove failed promise so it can be retried
+      delete template4Promises[cacheKey];
       throw error;
     }
   })();
 
-  return template4Promise;
+  return template4Promises[cacheKey];
 }
 
 /**
  * Get Template4 data (synchronous access to cache)
  */
-export function getTemplate4Data(): Template4Data | null {
-  return template4DataCache;
+export function getTemplate4Data(companyId?: string): Template4Data | null {
+  const cacheKey = companyId || 'default';
+  return template4DataCache[cacheKey] || null;
 }
 

@@ -131,7 +131,7 @@ const Index = () => {
 
             {/* Posts */}
             {feedItems.map((post, index) => (
-              <FeedPost key={index} {...post} />
+              <FeedPost key={index} {...post} journeyStage={journeyStage} />
             ))}
           </section>
 

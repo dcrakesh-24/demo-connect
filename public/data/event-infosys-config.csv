@@ -1,0 +1,140 @@
+section,field,value,type
+header,logoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+header,logoText,Infosys,string
+header,navAboutText,About Event,string
+header,navAboutHref,#about,string
+header,navBoothText,Find Our Booth,string
+header,navBoothHref,#booth,string
+header,navTeamText,Meet the Team,string
+header,navTeamHref,#team,string
+header,ctaButtonText,Book a Meeting,string
+header,ctaButtonLink,#,string
+header,backgroundColor,#FFFFFF,color
+header,logoGradientFrom,#006CB5,color
+header,logoGradientTo,#00AEEF,color
+hero,badge,Infosys Digital Innovation Summit 2025,string
+hero,highlightedName,Rahul,string
+hero,greeting,let's meet at the Digital Innovation Summit,string
+hero,description,,string
+hero,boothInfo,The Infosys team will be at Booth 205! Register for a time slot or drop by to say hello and chat about:,string
+hero,topic1,Digital Transformation Strategies,string
+hero,topic2,Cloud and AI Solutions,string
+hero,topic3,Enterprise Automation,string
+hero,eventDate,March 15th - 17th,string
+hero,eventYear,2025,string
+hero,venueName,Bangalore International Exhibition Centre,string
+hero,venueLocation,Bengaluru,string
+hero,boothNumber,205,string
+hero,boothLocation,Hall 2 - Technology Pavilion,string
+hero,primaryCtaText,Chat with us!,string
+hero,primaryCtaLink,#,string
+hero,secondaryCtaText,Learn More,string
+hero,secondaryCtaLink,#,string
+hero,socialProof,800+ enterprise meetings scheduled,string
+hero,resortImageUrl,https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200,string
+hero,teamMember1_name,Rahul Nair,string
+hero,teamMember1_title,CEO @ Infosys,string
+hero,teamMember1_avatarUrl,https://api.dicebear.com/7.x/initials/svg?seed=RN,string
+hero,teamMember2_name,Priya Sharma,string
+hero,teamMember2_title,VP Digital Services @ Infosys,string
+hero,teamMember2_avatarUrl,https://api.dicebear.com/7.x/initials/svg?seed=PS,string
+hero,teamMember3_name,Arjun Patel,string
+hero,teamMember3_title,Head of Cloud Solutions @ Infosys,string
+hero,teamMember3_avatarUrl,https://api.dicebear.com/7.x/initials/svg?seed=AP,string
+hero,backgroundColor,#006CB5,color
+hero,highlightedTextColor,#FFD700,color
+hero,badgeColor,#00AEEF,color
+hero,gradientFrom,#006CB5,color
+hero,gradientTo,#00AEEF,color
+features,badge,What We'll Discuss,string
+features,title,Digital Transformation Solutions,string
+features,description,Join us for insights on modernizing your enterprise with cutting-edge digital technologies.,string
+features,feature1_icon,Sparkles,string
+features,feature1_title,Cloud Transformation,string
+features,feature1_description,Learn how to migrate to the cloud and optimize your infrastructure for agility and cost efficiency.,string
+features,feature2_icon,Code,string
+features,feature2_title,AI and Automation,string
+features,feature2_description,Discover how AI and intelligent automation can transform your business processes.,string
+features,feature3_icon,Smartphone,string
+features,feature3_title,Digital Experience,string
+features,feature3_description,Create exceptional customer experiences with modern digital platforms and solutions.,string
+features,feature4_icon,Zap,string
+features,feature4_title,Data Analytics,string
+features,feature4_description,Unlock insights from your data to drive informed decision-making and innovation.,string
+features,backgroundColor,#F5F5F7,color
+features,badgeColor,#006CB5,color
+boothMap,badge,Find Us Easily,string
+boothMap,title,We're at Booth 205,string
+boothMap,description,Located in Hall 2 - Technology Pavilion, our booth is designed for meaningful conversations. Stop by for live demos and technical discussions!,string
+boothMap,locationTitle,Hall 2 - Technology Pavilion,string
+boothMap,locationDescription,Bangalore International Exhibition Centre, Bengaluru, India,string
+boothMap,directionsTitle,Easy to Find,string
+boothMap,directionsDescription,Enter from the main entrance, our booth is in the Technology Pavilion section,string
+boothMap,ctaButtonText,Get Directions,string
+boothMap,ctaButtonLink,#,string
+boothMap,mapImageUrl,https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200,string
+boothMap,boothNumber,205,string
+boothMap,backgroundColor,#FFFFFF,color
+boothMap,badgeColor,#006CB5,color
+team,badge,The Team,string
+team,title,Meet the Infosys Team,string
+team,description,Our digital transformation experts are ready to help you navigate your next.,string
+team,member1_name,Rahul Nair,string
+team,member1_role,CEO,string
+team,member1_bio,Leading Infosys' vision for digital transformation and client success.,string
+team,member1_initials,RN,string
+team,member1_linkedinUrl,https://www.linkedin.com/in/rahul-nair,string
+team,member1_twitterUrl,https://twitter.com/rahulnair,string
+team,member2_name,Priya Sharma,string
+team,member2_role,VP Digital Services,string
+team,member2_bio,Expert in digital transformation with 15+ years helping enterprises modernize their IT landscape.,string
+team,member2_initials,PS,string
+team,member2_linkedinUrl,https://www.linkedin.com/in/priya-sharma,string
+team,member2_twitterUrl,https://twitter.com/priyasharma,string
+team,member3_name,Arjun Patel,string
+team,member3_role,Head of Cloud Solutions,string
+team,member3_bio,Specialist in cloud architecture and migration strategies for enterprise clients.,string
+team,member3_initials,AP,string
+team,member3_linkedinUrl,https://www.linkedin.com/in/arjun-patel,string
+team,member3_twitterUrl,https://twitter.com/arjunpatel,string
+team,backgroundColor,#FFFFFF,color
+team,badgeColor,#006CB5,color
+cta,title,Ready to Transform Your Business?,string
+cta,description,Connect with our team to learn how Infosys can help you navigate your digital transformation journey.,string
+cta,benefit1,Expert consultation from industry leaders,string
+cta,benefit2,Exclusive access to digital solutions,string
+cta,benefit3,Best practices and transformation insights,string
+cta,benefit4,Networking with peers and experts,string
+cta,primaryCtaText,Book Your Meeting,string
+cta,primaryCtaLink,#,string
+cta,secondaryCtaText,Contact Us,string
+cta,secondaryCtaLink,#,string
+cta,trustText,Limited slots available • No commitment required,string
+cta,backgroundColor,#1D1D1F,color
+cta,textColor,#FFFFFF,color
+findUs,title,Find us here,string
+findUs,imageUrl,https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200,string
+findUs,backgroundColor,#F5F5F7,color
+footer,logoText,Infosys,string
+footer,description,Navigate your next,string
+footer,socialLinkedin,https://www.linkedin.com/company/infosys,string
+footer,socialTwitter,https://twitter.com/infosys,string
+footer,socialYoutube,https://www.youtube.com/user/infosys,string
+footer,productFeatures,https://www.infosys.com/services/,string
+footer,productPricing,https://www.infosys.com/services/,string
+footer,productIntegrations,https://www.infosys.com/services/,string
+footer,productCaseStudies,https://www.infosys.com/case-studies/,string
+footer,companyAbout,https://www.infosys.com/about/,string
+footer,companyCareers,https://www.infosys.com/careers/,string
+footer,companyBlog,https://www.infosys.com/insights/,string
+footer,companyPress,https://www.infosys.com/newsroom/,string
+footer,contactEmail,contact@infosys.com,string
+footer,contactSupport,https://www.infosys.com/support/,string
+footer,contactDocumentation,https://www.infosys.com/documentation/,string
+footer,legalPrivacy,https://www.infosys.com/privacy-policy/,string
+footer,legalTerms,https://www.infosys.com/terms/,string
+footer,legalCookie,https://www.infosys.com/cookie-policy/,string
+footer,copyright,Copyright © 2025 Infosys Limited. All rights reserved.,string
+footer,backgroundColor,#FFFFFF,color
+footer,borderColor,#E5E5E5,color
+

@@ -1,0 +1,169 @@
+section,field,value,type
+header,logoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+header,logoText,Apple,string
+header,backgroundColor,#FFFFFF,color
+header,textColor,#000000,color
+header,buttonColor,#007AFF,color
+header,buttonHoverColor,#0051D5,color
+header,navLink1_text,Products,string
+header,navLink1_link,#,string
+header,navLink2_text,Innovation,string
+header,navLink2_link,#,string
+header,navLink3_text,Support,string
+header,navLink3_link,#,string
+header,navLink4_text,About,string
+header,navLink4_link,#,string
+header,signInLink,#,string
+header,getStartedLink,#,string
+toc,item1_id,iphone-innovation,string
+toc,item1_text,iPhone Innovation and Technology,string
+toc,item1_link,#iphone-innovation,string
+toc,item1_active,true,string
+toc,item2_id,apple-ecosystem,string
+toc,item2_text,The Apple Ecosystem Advantage,string
+toc,item2_link,#apple-ecosystem,string
+toc,item3_id,sustainability,string
+toc,item3_text,Apple's Commitment to Sustainability,string
+toc,item3_link,#sustainability,string
+toc,item4_id,security-privacy,string
+toc,item4_text,Security and Privacy First,string
+toc,item4_link,#security-privacy,string
+toc,item5_id,innovation-history,string
+toc,item5_text,A Legacy of Innovation,string
+toc,item5_link,#innovation-history,string
+toc,item6_id,apple-services,string
+toc,item6_text,An Ecosystem of Services,string
+toc,item6_link,#apple-services,string
+content,publishedDate,January 15th 2025,string
+content,title,Exploring iPhone Innovation: Technology That Transforms Lives,string
+content,author,Apple,string
+content,authorLink,#,string
+content,readTime,8 minutes,string
+content,featuredImage,https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=1200&h=600&fit=crop,string
+content,section1_id,iphone-innovation,string
+content,section1_heading,iPhone Innovation and Technology,string
+content,section1_content1,Since its introduction in 2007, the iPhone has revolutionized the way we communicate, work, and live. Apple's commitment to innovation has consistently pushed the boundaries of what a smartphone can do.,string
+content,section1_content2,The latest iPhone models feature cutting-edge technology including advanced camera systems, powerful A-series chips, and seamless integration with the Apple ecosystem.,string
+content,section1_content3,Apple Intelligence represents the next evolution of personal technology, bringing powerful AI capabilities directly to your device while maintaining privacy and security at the core.,string
+content,section1_content4,Each generation of iPhone builds upon previous innovations, delivering enhanced performance, better battery life, and features that users never knew they needed.,string
+content,section2_id,apple-ecosystem,string
+content,section2_heading,The Apple Ecosystem Advantage,string
+content,section2_content1,One of Apple's greatest strengths lies in its ecosystem - the seamless integration between iPhone, iPad, Mac, Apple Watch, and other Apple devices.,string
+content,section2_content2,This integration allows users to start a task on one device and seamlessly continue on another, creating a truly unified experience.,string
+content,section2_content3,Features like Handoff, Continuity, and Universal Clipboard make the Apple ecosystem more powerful than the sum of its parts.,string
+content,section2_listItem1,iCloud: Sync your photos, documents, and data across all devices,string
+content,section2_listItem2,AirDrop: Instantly share files between Apple devices,string
+content,section2_listItem3,Apple Pay: Secure payments across iPhone, Apple Watch, and Mac,string
+content,section3_id,sustainability,string
+content,section3_heading,Apple's Commitment to Sustainability,string
+content,section3_content1,Apple is committed to carbon neutrality by 2030, and this commitment extends to every iPhone we make.,string
+content,section3_content2,Our devices use recycled materials, renewable energy in manufacturing, and are designed to last for years, reducing the need for frequent upgrades.,string
+content,section3_content3,The iPhone is built with the environment in mind, from recycled aluminum in the enclosure to recycled rare earth elements in the magnets.,string
+content,section3_content4,We've eliminated plastic from our packaging and use 100% recycled or renewable materials in key components.,string
+content,section3_listItem1,100% carbon neutral by 2030,string
+content,section3_listItem2,Recycled materials in every product,string
+content,section3_listItem3,Renewable energy in all facilities,string
+content,section4_id,security-privacy,string
+content,section4_heading,Security and Privacy First,string
+content,section4_content1,Apple has always believed that privacy is a fundamental human right. Our products are designed with security and privacy at their core.,string
+content,section4_content2,Every iPhone features end-to-end encryption, secure enclaves, and advanced privacy protections that give users control over their data.,string
+content,section4_content3,Features like App Tracking Transparency and Privacy Nutrition Labels ensure users know exactly how their data is being used.,string
+content,section4_content4,Apple Intelligence runs entirely on-device for most tasks, ensuring your personal information never leaves your device.,string
+content,section4_listItem1,End-to-end encryption,string
+content,section4_listItem2,On-device processing,string
+content,section4_listItem3,App Tracking Transparency,string
+content,section4_listItem4,Privacy Nutrition Labels,string
+content,section5_id,innovation-history,string
+content,section5_heading,A Legacy of Innovation,string
+content,section5_content1,Since the first iPhone was introduced in 2007, Apple has continuously pushed the boundaries of what a smartphone can do.,string
+content,section5_content2,Each generation brings breakthrough technologies that redefine how we interact with our devices and the world around us.,string
+content,section5_content3,From the revolutionary multi-touch interface to the introduction of Face ID and Apple Intelligence, innovation is at the heart of everything we do.,string
+content,section5_content4,The App Store has enabled millions of developers to create apps that transform industries and improve lives.,string
+content,section5_content5,Today, the iPhone is not just a phone - it's a powerful computer, camera, creative tool, and gateway to an entire ecosystem of services.,string
+content,section6_id,apple-services,string
+content,section6_heading,An Ecosystem of Services,string
+content,section6_content1,The iPhone works seamlessly with Apple's suite of services, creating an ecosystem that makes your digital life easier and more secure.,string
+content,section6_content2,From iCloud backup to Apple Music, Apple TV+, and Apple Arcade, these services enhance your iPhone experience.,string
+content,section6_content3,Apple Pay transforms your iPhone into a secure wallet, while Apple Card offers a new kind of credit card experience.,string
+content,section6_listItem1,iCloud: Seamless data sync across devices,string
+content,section6_listItem2,Apple Music: 100 million songs at your fingertips,string
+content,section6_listItem3,Apple TV+: Award-winning original content,string
+content,section6_listItem4,Apple Arcade: Premium gaming experience,string
+content,section6_listItem5,Apple Pay: Secure and private payments,string
+ad,logoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+ad,title,Discover the Latest iPhone,string
+ad,description,Experience the power of Apple Intelligence and revolutionary camera technology in the newest iPhone models.,string
+ad,ctaButtonText,Learn More,string
+ad,ctaButtonLink,https://www.apple.com/iphone/,string
+ad,backgroundColor,#F5F5F7,color
+ad,borderColor,#E5E5E7,color
+ad,buttonColor,#007AFF,color
+ad,buttonHoverColor,#0051D5,color
+footer,column1_title,Shop and Learn,string
+footer,column1_link1_text,iPhone,string
+footer,column1_link1_url,https://www.apple.com/iphone/,string
+footer,column1_link2_text,iPad,string
+footer,column1_link2_url,https://www.apple.com/ipad/,string
+footer,column1_link3_text,Mac,string
+footer,column1_link3_url,https://www.apple.com/mac/,string
+footer,column2_title,Services,string
+footer,column2_link1_text,Apple Music,string
+footer,column2_link1_url,https://www.apple.com/apple-music/,string
+footer,column2_link2_text,iCloud,string
+footer,column2_link2_url,https://www.icloud.com/,string
+footer,column2_link3_text,Apple Store,string
+footer,column2_link3_url,https://www.apple.com/store/,string
+footer,column3_title,Apple,string
+footer,column3_link1_text,About Apple,string
+footer,column3_link1_url,https://www.apple.com/about/,string
+footer,column3_link2_text,Newsroom,string
+footer,column3_link2_url,https://www.apple.com/newsroom/,string
+footer,column3_link3_text,Investors,string
+footer,column3_link3_url,https://investor.apple.com/,string
+footer,column4_title,Legal,string
+footer,column4_link1_text,Privacy Policy,string
+footer,column4_link1_url,https://www.apple.com/privacy/,string
+footer,column4_link2_text,Terms of Use,string
+footer,column4_link2_url,https://www.apple.com/legal/,string
+footer,column4_link3_text,Cookie Policy,string
+footer,column4_link3_url,https://www.apple.com/legal/privacy/cookies/,string
+footer,column5_title,More,string
+footer,column5_link1_text,Support,string
+footer,column5_link1_url,https://support.apple.com/,string
+footer,column5_link2_text,Contact Us,string
+footer,column5_link2_url,https://www.apple.com/contact/,string
+footer,column5_link3_text,Store Locator,string
+footer,column5_link3_url,https://www.apple.com/retail/,string
+footer,newsletterTitle,Apple News,string
+footer,newsletterDescription,Stay updated with the latest from Apple,string
+footer,newsletterButtonText,Subscribe,string
+footer,language,English,string
+footer,copyright,Copyright © 2025 Apple Inc. All rights reserved.,string
+footer,companyInfo,Apple Inc. | One Apple Park Way, Cupertino, CA 95014,string
+footer,socialX,https://twitter.com/apple,string
+footer,socialFacebook,https://www.facebook.com/apple,string
+footer,socialLinkedin,https://www.linkedin.com/company/apple,string
+footer,socialInstagram,https://www.instagram.com/apple/,string
+footer,socialYoutube,https://www.youtube.com/apple,string
+footer,backgroundColor,#F5F5F7,color
+footer,textColor,#1D1D1F,color
+footer,linkColor,#424245,color
+chatWidget,enabled,true,string
+chatWidget,message,How can we help you today?,string
+chatWidget,logoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+chatWidget,backgroundColor,#FFFFFF,color
+chatWidget,textColor,#000000,color
+share,xLink,#,string
+share,facebookLink,#,string
+share,linkedinLink,#,string
+share,redditLink,#,string
+share,whatsappLink,#,string
+productDemo,title,EXPLORE iPHONE,string
+productDemo,heading,Ready to experience the latest iPhone technology?,string
+productDemo,ctaButtonText,Learn More,string
+productDemo,ctaButtonLink,https://www.apple.com/iphone/,string
+productDemo,backgroundColor,#007AFF,color
+productDemo,textColor,#FFFFFF,color
+productDemo,buttonColor,#FFFFFF,color
+productDemo,buttonHoverColor,#F5F5F7,color
+

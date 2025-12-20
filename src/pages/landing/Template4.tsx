@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import {
   BlogArticleHeader,
   TableOfContents,
@@ -22,18 +23,20 @@ import type { Template4Data } from "@/data/landing/template4";
  * Data is loaded from CSV file for easy configuration.
  */
 const Template4 = () => {
+  const [searchParams] = useSearchParams();
+  const companyId = searchParams.get('companyId') || undefined;
   const [data, setData] = useState<Template4Data | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     // Clear cache on mount to ensure fresh data from CSV
-    clearTemplate4Cache();
+    clearTemplate4Cache(companyId);
     
     const loadData = async () => {
       try {
         // Force reload by clearing cache
-        const loadedData = await loadTemplate4Data(true);
+        const loadedData = await loadTemplate4Data(companyId, true);
         setData(loadedData);
         setLoading(false);
       } catch (err) {
@@ -43,7 +46,7 @@ const Template4 = () => {
     };
     
     loadData();
-  }, []);
+  }, [companyId]);
 
   if (loading) {
     return (

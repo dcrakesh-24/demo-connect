@@ -1,0 +1,131 @@
+section,field,value,type
+header,logoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+header,logoText,Apple,string
+header,navAboutText,About Event,string
+header,navAboutHref,#about,string
+header,navBoothText,Find Our Booth,string
+header,navBoothHref,#booth,string
+header,navTeamText,Meet the Team,string
+header,navTeamHref,#team,string
+header,ctaButtonText,Book a Meeting,string
+header,ctaButtonLink,#,string
+header,backgroundColor,#FFFFFF,color
+header,logoGradientFrom,#007AFF,color
+header,logoGradientTo,#5856D6,color
+hero,badge,Apple Worldwide Developers Conference 2025,string
+hero,highlightedName,Taylor,string
+hero,greeting,let's meet at WWDC 2025,string
+hero,description,,string
+hero,boothInfo,The Apple team will be at Booth 101! Register for a time slot or drop by to say hello and chat about:,string
+hero,topic1,Latest iOS and macOS Innovations,string
+hero,topic2,Apple Intelligence and Machine Learning,string
+hero,topic3,App Store Optimization Strategies,string
+hero,eventDate,June 9th - 13th,string
+hero,eventYear,2025,string
+hero,venueName,Apple Park,string
+hero,venueLocation,Cupertino,string
+hero,boothNumber,101,string
+hero,boothLocation,Main Exhibition Hall,string
+hero,primaryCtaText,Chat with us!,string
+hero,primaryCtaLink,#,string
+hero,secondaryCtaText,Learn More,string
+hero,secondaryCtaLink,#,string
+hero,socialProof,1000+ developer meetings scheduled,string
+hero,resortImageUrl,https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=1200,string
+hero,teamMember1_name,Taylor Reed,string
+hero,teamMember1_title,CEO @ Apple,string
+hero,teamMember1_avatarUrl,https://api.dicebear.com/7.x/initials/svg?seed=TR,string
+hero,backgroundColor,#007AFF,color
+hero,highlightedTextColor,#FFD700,color
+hero,badgeColor,#5856D6,color
+hero,gradientFrom,#007AFF,color
+hero,gradientTo,#5856D6,color
+features,badge,What We'll Discuss,string
+features,title,Apple Developer Innovations,string
+features,description,Join us for insights on the latest Apple technologies and developer tools.,string
+features,feature1_icon,Sparkles,string
+features,feature1_title,Apple Intelligence,string
+features,feature1_description,Explore how Apple Intelligence is transforming app development and user experiences.,string
+features,feature2_icon,Code,string
+features,feature2_title,Swift and SwiftUI,string
+features,feature2_description,Learn about the latest features in Swift programming and SwiftUI framework.,string
+features,feature3_icon,Smartphone,string
+features,feature3_title,iOS 19 Features,string
+features,feature3_description,Discover new capabilities and APIs in the latest iOS release.,string
+features,feature4_icon,Zap,string
+features,feature4_title,Performance Optimization,string
+features,feature4_description,Learn best practices for optimizing app performance and battery efficiency.,string
+features,backgroundColor,#F5F5F7,color
+features,badgeColor,#007AFF,color
+boothMap,badge,Find Us Easily,string
+boothMap,title,We're at Booth 101,string
+boothMap,description,Located in the main exhibition hall, our booth is designed for developer engagement. Stop by for live demos and technical discussions!,string
+boothMap,locationTitle,Main Exhibition Hall,string
+boothMap,locationDescription,Apple Park, Cupertino, California,string
+boothMap,directionsTitle,Easy to Find,string
+boothMap,directionsDescription,Enter from the main entrance, our booth is directly ahead,string
+boothMap,ctaButtonText,Get Directions,string
+boothMap,ctaButtonLink,#,string
+boothMap,mapImageUrl,https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=1200,string
+boothMap,boothNumber,101,string
+boothMap,backgroundColor,#FFFFFF,color
+boothMap,badgeColor,#007AFF,color
+team,badge,The Team,string
+team,title,Meet the Apple Team,string
+team,description,Our developer relations experts are ready to help you build amazing apps.,string
+team,member1_name,Taylor Reed,string
+team,member1_role,CEO,string
+team,member1_bio,Leading Apple's vision for developer success,string
+team,member1_initials,TR,string
+team,member1_linkedinUrl,https://www.linkedin.com/in/taylor-reed,string
+team,member1_twitterUrl,https://twitter.com/taylorreed,string
+team,member2_name,Sarah Chen,string
+team,member2_role,Senior Developer Relations Engineer,string
+team,member2_bio,Expert in iOS and macOS development with 10+ years of experience helping developers build amazing apps.,string
+team,member2_initials,SC,string
+team,member2_linkedinUrl,https://www.linkedin.com/in/sarah-chen,string
+team,member2_twitterUrl,https://twitter.com/sarahchen,string
+team,member3_name,Michael Johnson,string
+team,member3_role,Product Marketing Manager,string
+team,member3_bio,Passionate about helping developers succeed with Apple technologies and tools.,string
+team,member3_initials,MJ,string
+team,member3_linkedinUrl,https://www.linkedin.com/in/michael-johnson,string
+team,member3_twitterUrl,https://twitter.com/michaeljohnson,string
+cta,title,Ready to Build with Apple?,string
+cta,description,Connect with our team to learn how Apple technologies can transform your applications.,string
+cta,benefit1,Expert guidance from Apple engineers,string
+cta,benefit2,Exclusive access to beta tools,string
+cta,benefit3,Best practices and optimization tips,string
+cta,primaryCtaText,Book Your Meeting,string
+cta,primaryCtaLink,#,string
+cta,secondaryCtaText,Contact Us,string
+cta,secondaryCtaLink,#,string
+cta,trustText,Limited slots available • No commitment required,string
+cta,backgroundColor,#1D1D1F,color
+cta,textColor,#FFFFFF,color
+findUs,title,Find us here,string
+findUs,imageUrl,https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=1200,string
+findUs,backgroundColor,#F5F5F7,color
+footer,logoText,Apple,string
+footer,description,Think Different,string
+footer,socialLinkedin,https://www.linkedin.com/company/apple,string
+footer,socialTwitter,https://twitter.com/apple,string
+footer,socialYoutube,https://www.youtube.com/apple,string
+footer,productFeatures,https://www.apple.com/features/,string
+footer,productPricing,https://www.apple.com/pricing/,string
+footer,productIntegrations,https://developer.apple.com/integrations/,string
+footer,productCaseStudies,https://developer.apple.com/case-studies/,string
+footer,companyAbout,https://www.apple.com/about/,string
+footer,companyCareers,https://www.apple.com/careers/,string
+footer,companyBlog,https://developer.apple.com/news/,string
+footer,companyPress,https://www.apple.com/newsroom/,string
+footer,contactEmail,developer@apple.com,string
+footer,contactSupport,https://developer.apple.com/support/,string
+footer,contactDocumentation,https://developer.apple.com/documentation/,string
+footer,legalPrivacy,https://www.apple.com/privacy/,string
+footer,legalTerms,https://www.apple.com/legal/,string
+footer,legalCookie,https://www.apple.com/legal/privacy/cookies/,string
+footer,copyright,Copyright © 2025 Apple Inc. All rights reserved.,string
+footer,backgroundColor,#F5F5F7,color
+footer,borderColor,#D2D2D7,color
+

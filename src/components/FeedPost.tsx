@@ -8,7 +8,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { MoreHorizontal, ThumbsUp, MessageCircle, Repeat2, Send, Globe, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import type { AdCreative } from "@/data/ads";
+import type { JourneyStage } from "@/data/ads";
 
 interface FeedPostProps {
   author: {
@@ -26,7 +28,29 @@ interface FeedPostProps {
   isSponsored?: boolean;
   companyId?: string;
   ad?: AdCreative;
+  journeyStage?: JourneyStage;
 }
+
+// Map journey stage to route with companyId query parameter
+const getRouteForStage = (stage?: JourneyStage, companyId?: string): string => {
+  const baseRoute = (() => {
+    switch (stage) {
+      case "unware":
+        return "/blog";
+      case "ware":
+        return "/event";
+      case "consideration":
+        return "/after-meeting";
+      default:
+        return "/blog"; // Default to blog
+    }
+  })();
+  
+  if (companyId) {
+    return `${baseRoute}?companyId=${encodeURIComponent(companyId)}`;
+  }
+  return baseRoute;
+};
 
 export const FeedPost = ({
   author,
@@ -39,6 +63,7 @@ export const FeedPost = ({
   isSponsored,
   companyId,
   ad,
+  journeyStage,
 }: FeedPostProps) => {
   const AuthorName = (
     <h3 className="font-semibold text-sm text-foreground">
@@ -50,31 +75,10 @@ export const FeedPost = ({
   const adTypeLabel = ad?.type ? (ad.type === "carousel" ? "Carousel ad" : "Single ad") : undefined;
   const creativeImages = ad?.images?.length ? ad.images : image ? [image] : [];
   const showCarousel = (ad?.type === "carousel" && creativeImages.length > 1) || creativeImages.length > 1;
-  const landingUrl = ad?.landingUrl;
   const ctaLabel = ad?.ctaLabel ?? "Learn more";
-  const landingUrlWithParams = (() => {
-    if (!landingUrl || !ad?.stage) return landingUrl;
-
-    try {
-      const url = new URL(landingUrl);
-      url.searchParams.set("stage", ad.stage);
-      url.searchParams.set("company", author.name);
-      return url.toString();
-    } catch {
-      // Fallback for non-standard URLs
-      const joiner = landingUrl.includes("?") ? "&" : "?";
-      return `${landingUrl}${joiner}stage=${encodeURIComponent(ad.stage)}&company=${encodeURIComponent(author.name)}`;
-    }
-  })();
-
-  const landingHost = (() => {
-    if (!landingUrl) return "";
-    try {
-      return new URL(landingUrl).host.replace(/^www\./, "");
-    } catch {
-      return "";
-    }
-  })();
+  
+  // Determine route based on journey stage for sponsored posts
+  const ctaRoute = isSponsored && journeyStage ? getRouteForStage(journeyStage, companyId) : null;
 
   return (
     <article className="linkedin-card overflow-hidden animate-fade-in">
@@ -145,14 +149,10 @@ export const FeedPost = ({
       )}
 
       {/* CTA */}
-      {isSponsored && landingUrlWithParams && (
+      {isSponsored && ctaRoute && (
         <div className="border-t border-border bg-secondary/40 px-3 py-3 flex items-center justify-between gap-3">
           <div className="min-w-0">
-            {landingHost ? (
-              <p className="text-xs text-muted-foreground truncate">{landingHost}</p>
-            ) : (
-              <p className="text-xs text-muted-foreground truncate">Sponsored</p>
-            )}
+            <p className="text-xs text-muted-foreground truncate">Sponsored</p>
           </div>
           <Button
             asChild
@@ -160,9 +160,9 @@ export const FeedPost = ({
             size="sm"
             className="rounded-full border-primary text-primary hover:bg-primary/10 hover:text-primary"
           >
-            <a href={landingUrlWithParams} target="_blank" rel="noreferrer">
+            <Link to={ctaRoute}>
               {ctaLabel}
-            </a>
+            </Link>
           </Button>
         </div>
       )}

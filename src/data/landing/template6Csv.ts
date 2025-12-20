@@ -6,38 +6,50 @@
 import { loadCsvFile } from "@/lib/csvParser";
 import type { Template6Data, Template6Feature, Template6TeamMember } from "./template6";
 
-let template6DataCache: Template6Data | null = null;
-let template6Promise: Promise<Template6Data> | null = null;
+let template6DataCache: Record<string, Template6Data> = {};
+let template6Promises: Record<string, Promise<Template6Data>> = {};
 
 /**
  * Clear Template6 data cache (useful for development/reloads)
  */
-export function clearTemplate6Cache(): void {
-  template6DataCache = null;
-  template6Promise = null;
+export function clearTemplate6Cache(companyId?: string): void {
+  if (companyId) {
+    delete template6DataCache[companyId];
+    delete template6Promises[companyId];
+  } else {
+    template6DataCache = {};
+    template6Promises = {};
+  }
 }
 
 /**
  * Load Template6 data from CSV
+ * @param companyId - Company ID to load company-specific data. Falls back to default if not provided.
  * @param forceReload - If true, clears cache and forces reload
  */
-export async function loadTemplate6Data(forceReload: boolean = false): Promise<Template6Data> {
+export async function loadTemplate6Data(companyId?: string, forceReload: boolean = false): Promise<Template6Data> {
+  const cacheKey = companyId || 'default';
+  
   if (forceReload) {
-    clearTemplate6Cache();
+    clearTemplate6Cache(companyId);
   }
 
-  if (template6DataCache && !forceReload) {
-    return template6DataCache;
+  if (template6DataCache[cacheKey] && !forceReload) {
+    return template6DataCache[cacheKey];
   }
 
-  if (template6Promise && !forceReload) {
-    return template6Promise;
+  if (template6Promises[cacheKey] && !forceReload) {
+    return template6Promises[cacheKey];
   }
 
-  template6Promise = (async () => {
+  template6Promises[cacheKey] = (async () => {
     try {
       const timestamp = new Date().getTime();
-      const csvData = await loadCsvFile(`/data/template6-config.csv?t=${timestamp}`);
+      // Use company-specific CSV if companyId is provided, otherwise use default
+      const csvFileName = companyId 
+        ? `event-${companyId}-config.csv`
+        : 'template6-config.csv';
+      const csvData = await loadCsvFile(`/data/${csvFileName}?t=${timestamp}`);
 
       // Extract features
       const features: Template6Feature[] = [];
@@ -265,21 +277,24 @@ export async function loadTemplate6Data(forceReload: boolean = false): Promise<T
         },
       };
 
-      template6DataCache = data;
+      template6DataCache[cacheKey] = data;
       return data;
     } catch (error) {
       console.error('Error loading Template6 CSV data:', error);
+      // Remove failed promise so it can be retried
+      delete template6Promises[cacheKey];
       throw error;
     }
   })();
 
-  return template6Promise;
+  return template6Promises[cacheKey];
 }
 
 /**
  * Get Template6 data (synchronous access to cache)
  */
-export function getTemplate6Data(): Template6Data | null {
-  return template6DataCache;
+export function getTemplate6Data(companyId?: string): Template6Data | null {
+  const cacheKey = companyId || 'default';
+  return template6DataCache[cacheKey] || null;
 }
 

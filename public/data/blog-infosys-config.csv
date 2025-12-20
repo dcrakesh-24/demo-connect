@@ -1,0 +1,172 @@
+section,field,value,type
+header,logoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+header,logoText,Infosys,string
+header,backgroundColor,#FFFFFF,color
+header,textColor,#000000,color
+header,buttonColor,#006CB5,color
+header,buttonHoverColor,#005A9F,color
+header,navLink1_text,Services,string
+header,navLink1_link,#,string
+header,navLink2_text,Industries,string
+header,navLink2_link,#,string
+header,navLink3_text,Innovation,string
+header,navLink3_link,#,string
+header,navLink4_text,Insights,string
+header,navLink4_link,#,string
+header,signInLink,#,string
+header,getStartedLink,#,string
+toc,item1_id,digital-transformation,string
+toc,item1_text,Digital Transformation in the Modern Enterprise,string
+toc,item1_link,#digital-transformation,string
+toc,item1_active,true,string
+toc,item2_id,cloud-services,string
+toc,item2_text,Cloud Services and Infrastructure,string
+toc,item2_link,#cloud-services,string
+toc,item3_id,ai-automation,string
+toc,item3_text,AI and Automation Solutions,string
+toc,item3_link,#ai-automation,string
+toc,item4_id,industry-expertise,string
+toc,item4_text,Industry-Specific Solutions,string
+toc,item4_link,#industry-expertise,string
+toc,item5_id,consulting-approach,string
+toc,item5_text,Our Consulting Methodology,string
+toc,item5_link,#consulting-approach,string
+toc,item6_id,success-stories,string
+toc,item6_text,Client Success Stories,string
+toc,item6_link,#success-stories,string
+content,publishedDate,January 20th 2025,string
+content,title,Digital Transformation: Navigating Your Next with Infosys,string
+content,author,Infosys,string
+content,authorLink,#,string
+content,readTime,12 minutes,string
+content,featuredImage,https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=600&fit=crop,string
+content,section1_id,digital-transformation,string
+content,section1_heading,Digital Transformation in the Modern Enterprise,string
+content,section1_content1,In today's rapidly evolving business landscape, digital transformation has become imperative for organizations seeking to maintain competitive advantage and drive sustainable growth.,string
+content,section1_content2,Infosys has been at the forefront of helping enterprises navigate their digital journey, combining deep industry expertise with cutting-edge technology solutions.,string
+content,section1_content3,Our approach to digital transformation goes beyond technology implementation - we help organizations reimagine their business models, enhance customer experiences, and build capabilities for the future.,string
+content,section1_content4,With over four decades of experience serving clients across industries, we understand that every transformation journey is unique and requires a tailored strategy.,string
+content,section1_content5,Our comprehensive suite of services enables organizations to accelerate their digital initiatives while minimizing risk and maximizing return on investment.,string
+content,section2_id,cloud-services,string
+content,section2_heading,Cloud Services and Infrastructure,string
+content,section2_content1,Cloud adoption has become a cornerstone of modern digital transformation strategies, enabling organizations to scale rapidly, reduce costs, and improve agility.,string
+content,section2_content2,Infosys offers comprehensive cloud services across all major platforms, helping clients migrate, optimize, and innovate in the cloud.,string
+content,section2_content3,Our cloud expertise spans infrastructure modernization, application migration, cloud-native development, and multi-cloud management.,string
+content,section2_content4,Key cloud services we provide include:,string
+content,section2_listItem1,Cloud Strategy and Consulting: Assess current state and develop roadmap for cloud adoption,string
+content,section2_listItem2,Cloud Migration Services: Seamlessly migrate applications and data to cloud platforms,string
+content,section2_listItem3,Cloud Infrastructure Management: Optimize and manage cloud environments for performance and cost,string
+content,section2_listItem4,DevOps and CI/CD: Implement modern development practices for faster time-to-market,string
+content,section3_id,ai-automation,string
+content,section3_heading,AI and Automation Solutions,string
+content,section3_content1,Artificial Intelligence and automation are transforming how businesses operate, enabling intelligent decision-making and operational efficiency at unprecedented scales.,string
+content,section3_content2,Infosys leverages AI and machine learning to help clients automate processes, gain insights from data, and create intelligent applications that drive business value.,string
+content,section3_content3,Our AI services include everything from strategic consulting to implementation of advanced AI solutions tailored to specific business needs.,string
+content,section3_content4,We help organizations build AI capabilities across the enterprise, from chatbots and virtual assistants to predictive analytics and intelligent automation.,string
+content,section3_listItem1,Machine Learning and Deep Learning: Build custom AI models for business applications,string
+content,section3_listItem2,Process Automation: Automate repetitive tasks and workflows using RPA and intelligent automation,string
+content,section3_listItem3,AI Consulting: Develop AI strategies aligned with business objectives,string
+content,section3_listItem4,Data Analytics: Extract actionable insights from enterprise data,string
+content,section4_id,industry-expertise,string
+content,section4_heading,Industry-Specific Solutions,string
+content,section4_content1,Every industry has unique challenges and opportunities. Our deep domain expertise enables us to deliver solutions that address specific industry needs while leveraging our technology capabilities.,string
+content,section4_content2,We serve clients across diverse industries including financial services, healthcare, manufacturing, retail, energy, and telecommunications.,string
+content,section4_content3,Our industry-specific solutions combine domain knowledge with technology innovation to solve complex business problems and drive competitive advantage.,string
+content,section4_content4,Key industries we serve:,string
+content,section4_listItem1,Financial Services: Digital banking, risk management, regulatory compliance,string
+content,section4_listItem2,Healthcare: Electronic health records, telemedicine, health analytics,string
+content,section4_listItem3,Manufacturing: Industry 4.0, supply chain optimization, IoT solutions,string
+content,section4_listItem4,Retail: E-commerce platforms, omnichannel experiences, inventory management,string
+content,section5_id,consulting-approach,string
+content,section5_heading,Our Consulting Methodology,string
+content,section5_content1,At Infosys, we believe that successful digital transformation requires a holistic approach that considers people, processes, and technology.,string
+content,section5_content2,Our consulting methodology is built on decades of experience and proven frameworks that have helped hundreds of organizations achieve their transformation goals.,string
+content,section5_content3,We work closely with clients to understand their unique challenges, co-create solutions, and ensure smooth implementation and adoption.,string
+content,section5_content4,Our approach emphasizes collaboration, innovation, and continuous improvement, ensuring that transformation initiatives deliver lasting value.,string
+content,section5_content5,We combine global expertise with local knowledge, bringing together the best talent and capabilities to serve our clients wherever they operate.,string
+content,section6_id,success-stories,string
+content,section6_heading,Client Success Stories,string
+content,section6_content1,Our track record speaks for itself - we've helped hundreds of organizations successfully transform their businesses and achieve remarkable outcomes.,string
+content,section6_content2,From Fortune 500 companies to growing enterprises, our clients have leveraged our expertise to drive innovation, improve efficiency, and create new business models.,string
+content,section6_content3,These success stories demonstrate our commitment to client success and our ability to deliver value across diverse industries and use cases.,string
+content,section6_listItem1,Reduced time-to-market by 40% through cloud-native transformation,string
+content,section6_listItem2,Improved operational efficiency by 35% with intelligent automation,string
+content,section6_listItem3,Enhanced customer satisfaction scores by 25% through digital experience initiatives,string
+content,section6_listItem4,Achieved cost savings of over $50M through cloud optimization,string
+ad,logoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+ad,title,Transform Your Business with Infosys,string
+ad,description,Partner with us to navigate your digital transformation journey and unlock new possibilities for growth and innovation.,string
+ad,ctaButtonText,Learn More,string
+ad,ctaButtonLink,https://www.infosys.com/,string
+ad,backgroundColor,#F5F5F7,color
+ad,borderColor,#E5E5E7,color
+ad,buttonColor,#006CB5,color
+ad,buttonHoverColor,#005A9F,color
+footer,column1_title,Services,string
+footer,column1_link1_text,Digital Services,string
+footer,column1_link1_url,https://www.infosys.com/services/,string
+footer,column1_link2_text,Consulting,string
+footer,column1_link2_url,https://www.infosys.com/services/consulting/,string
+footer,column1_link3_text,Engineering Services,string
+footer,column1_link3_url,https://www.infosys.com/services/engineering/,string
+footer,column2_title,Industries,string
+footer,column2_link1_text,Financial Services,string
+footer,column2_link1_url,https://www.infosys.com/industries/financial-services/,string
+footer,column2_link2_text,Healthcare,string
+footer,column2_link2_url,https://www.infosys.com/industries/healthcare/,string
+footer,column2_link3_text,Manufacturing,string
+footer,column2_link3_url,https://www.infosys.com/industries/manufacturing/,string
+footer,column3_title,About,string
+footer,column3_link1_text,About Infosys,string
+footer,column3_link1_url,https://www.infosys.com/about/,string
+footer,column3_link2_text,Careers,string
+footer,column3_link2_url,https://www.infosys.com/careers/,string
+footer,column3_link3_text,Investors,string
+footer,column3_link3_url,https://www.infosys.com/investors/,string
+footer,column4_title,Legal,string
+footer,column4_link1_text,Privacy Policy,string
+footer,column4_link1_url,https://www.infosys.com/privacy-policy/,string
+footer,column4_link2_text,Terms of Use,string
+footer,column4_link2_url,https://www.infosys.com/terms/,string
+footer,column4_link3_text,Cookie Policy,string
+footer,column4_link3_url,https://www.infosys.com/cookie-policy/,string
+footer,column5_title,More,string
+footer,column5_link1_text,Customer Support,string
+footer,column5_link1_url,https://www.infosys.com/support/,string
+footer,column5_link2_text,Help Center,string
+footer,column5_link2_url,https://www.infosys.com/help/,string
+footer,column5_link3_text,Contact Us,string
+footer,column5_link3_url,https://www.infosys.com/contact/,string
+footer,newsletterTitle,Infosys Insights,string
+footer,newsletterDescription,Stay updated with the latest insights and trends in digital transformation,string
+footer,newsletterButtonText,Subscribe,string
+footer,language,English,string
+footer,copyright,Copyright © 2025 Infosys Limited. All rights reserved.,string
+footer,companyInfo,Infosys Limited | Electronics City, Hosur Road, Bengaluru - 560100, India,string
+footer,socialX,https://twitter.com/infosys,string
+footer,socialFacebook,https://www.facebook.com/Infosys,string
+footer,socialLinkedin,https://www.linkedin.com/company/infosys,string
+footer,socialInstagram,https://www.instagram.com/infosys/,string
+footer,socialYoutube,https://www.youtube.com/user/infosys,string
+footer,backgroundColor,#FFFFFF,color
+footer,textColor,#000000,color
+footer,linkColor,#006CB5,color
+chatWidget,enabled,true,string
+chatWidget,message,How can we help you with your digital transformation journey?,string
+chatWidget,logoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+chatWidget,backgroundColor,#FFFFFF,color
+chatWidget,textColor,#000000,color
+share,xLink,#,string
+share,facebookLink,#,string
+share,linkedinLink,#,string
+share,redditLink,#,string
+share,whatsappLink,#,string
+productDemo,title,EXPLORE INFOSYS SERVICES,string
+productDemo,heading,Ready to begin your digital transformation journey?,string
+productDemo,ctaButtonText,Contact Us,string
+productDemo,ctaButtonLink,https://www.infosys.com/contact/,string
+productDemo,backgroundColor,#006CB5,color
+productDemo,textColor,#FFFFFF,color
+productDemo,buttonColor,#FFFFFF,color
+productDemo,buttonHoverColor,#F5F5F7,color
+

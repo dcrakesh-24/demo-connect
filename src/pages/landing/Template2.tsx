@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { PersonalizedHeader } from "@/components/landing/template2/PersonalizedHeader";
 import { PersonalizedHero } from "@/components/landing/template2/PersonalizedHero";
 import { UsefulInfoSection } from "@/components/landing/template2/UsefulInfoSection";
 import { VideoSection } from "@/components/landing/template2/VideoSection";
 import { CalendarSection } from "@/components/landing/template2/CalendarSection";
 import { Template2Footer } from "@/components/landing/template2/Template2Footer";
-import { loadTemplate2Data } from "@/data/landing/template2Csv";
+import { loadTemplate2Data, clearTemplate2Cache } from "@/data/landing/template2Csv";
 import type { Template2Data } from "@/data/landing/template2";
 
 /**
@@ -15,12 +16,17 @@ import type { Template2Data } from "@/data/landing/template2";
  * Data is loaded from CSV file for easy configuration.
  */
 const Template2 = () => {
+  const [searchParams] = useSearchParams();
+  const companyId = searchParams.get('companyId') || undefined;
   const [data, setData] = useState<Template2Data | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    loadTemplate2Data()
+    // Clear cache on mount to ensure fresh data from CSV
+    clearTemplate2Cache(companyId);
+    
+    loadTemplate2Data(companyId, true)
       .then((loadedData) => {
         setData(loadedData);
         setLoading(false);
@@ -29,7 +35,7 @@ const Template2 = () => {
         setError(err.message);
         setLoading(false);
       });
-  }, []);
+  }, [companyId]);
 
   if (loading) {
     return (

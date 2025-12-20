@@ -1,0 +1,102 @@
+section,field,value,type
+header,userName,Rahul,string
+header,logoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+header,logoAlt,Infosys Logo,string
+header,backgroundColor,#FFFFFF,color
+header,textColor,#000000,color
+header,learnMoreButtonText,Learn more,string
+header,learnMoreButtonLink,https://www.infosys.com/,string
+header,bookCallButtonText,Book a call,string
+header,bookCallButtonLink,#,string
+hero,primaryLogoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+hero,primaryLogoAlt,Infosys Logo,string
+hero,secondaryLogoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+hero,secondaryLogoAlt,Infosys Secondary Logo,string
+hero,greeting,"Hey Rahul, great to chat\nto you again yesterday,\nscroll down for next\nsteps!",string
+hero,description,Navigate your digital transformation journey with Infosys. Discover how our IT services and consulting expertise can transform your business.,string
+hero,graphicImageUrl,https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200,string
+hero,backgroundColor,#000000,color
+hero,textColor,#FFFFFF,color
+hero,greetingFontSize,48px,string
+hero,greetingLineHeight,1.25,string
+hero,greetingFontFamily,Arial,string
+hero,greetingFontWeight,700,string
+usefulInfo,title,Useful Information,string
+usefulInfo,backgroundColor,#FFFFFF,color
+usefulInfo,textColor,#000000,color
+usefulInfo,card1_id,1,string
+usefulInfo,card1_title,Digital Transformation Guide,string
+usefulInfo,card1_type,Most popular,string
+usefulInfo,card1_imageUrl,https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop,string
+usefulInfo,card1_label,Digital Transformation Guide,string
+usefulInfo,card1_icon,🚀,string
+usefulInfo,card2_id,2,string
+usefulInfo,card2_title,Cloud Services Overview,string
+usefulInfo,card2_type,PDF,string
+usefulInfo,card2_imageUrl,https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop,string
+usefulInfo,card2_label,Cloud_Services.pdf,string
+usefulInfo,card2_icon,📄,string
+usefulInfo,card3_id,3,string
+usefulInfo,card3_title,AI Solutions Portal,string
+usefulInfo,card3_type,Landing Page,string
+usefulInfo,card3_imageUrl,https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=500&fit=crop,string
+usefulInfo,card3_label,AI Solutions Portal,string
+usefulInfo,card3_icon,💻,string
+usefulInfo,card4_id,4,string
+usefulInfo,card4_title,Industry Solutions Guide,string
+usefulInfo,card4_type,PDF,string
+usefulInfo,card4_imageUrl,https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&h=500&fit=crop,string
+usefulInfo,card4_label,Industry_Solutions.pdf,string
+usefulInfo,card4_icon,📄,string
+usefulInfo,card5_id,5,string
+usefulInfo,card5_title,Digital Services Overview,string
+usefulInfo,card5_type,Video,string
+usefulInfo,card5_imageUrl,https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop,string
+usefulInfo,card5_label,Digital Services Overview,string
+usefulInfo,card5_icon,▶,string
+usefulInfo,card6_id,6,string
+usefulInfo,card6_title,Case Study: Enterprise Transformation,string
+usefulInfo,card6_type,PDF,string
+usefulInfo,card6_imageUrl,https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop,string
+usefulInfo,card6_label,Enterprise_Case_Study.pdf,string
+usefulInfo,card6_icon,📄,string
+usefulInfo,card7_id,7,string
+usefulInfo,card7_title,Getting Started with Infosys Services,string
+usefulInfo,card7_type,Document,string
+usefulInfo,card7_imageUrl,https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop,string
+usefulInfo,card7_label,Getting Started Guide,string
+usefulInfo,card7_icon,📋,string
+usefulInfo,card8_id,8,string
+usefulInfo,card8_title,API and Integration Documentation,string
+usefulInfo,card8_type,Document,string
+usefulInfo,card8_imageUrl,https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop,string
+usefulInfo,card8_label,API Documentation,string
+usefulInfo,card8_icon,🔧,string
+video,title,"Rahul, rewatch the demo here",string
+video,videoUrl,https://www.youtube.com/embed/dQw4w9WgXcQ,string
+video,backgroundColor,#F5F5F7,color
+video,textColor,#000000,color
+contact,name,Rahul Nair,string
+contact,title,CEO @ Infosys,string
+contact,avatarUrl,https://api.dicebear.com/7.x/initials/svg?seed=RN,string
+calendar,title,"Rahul, if you need anything in the meantime feel free to book a call!",string
+calendar,timezone,India Standard Time,string
+calendar,calendlyUrl,https://calendly.com/infosys-meeting/30min,string
+calendar,primaryLogoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+calendar,primaryLogoAlt,Infosys Logo,string
+calendar,secondaryLogoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+calendar,secondaryLogoAlt,Infosys Secondary Logo,string
+calendar,backgroundColor,#006CB5,color
+calendar,textColor,#FFFFFF,color
+calendar,containerWidth,70%,string
+calendar,containerMinHeight,720px,string
+footer,backgroundColor,#FFFFFF,color
+footer,textColor,#000000,color
+footer,borderColor,#E5E5E5,color
+footer,copyright,© Copyright 2025 Infosys Limited. All rights reserved.,string
+footer,termsLink,https://www.infosys.com/terms/,string
+footer,privacyLink,https://www.infosys.com/privacy-policy/,string
+footer,cookieLink,https://www.infosys.com/cookie-policy/,string
+footer,logoUrl,https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg,string
+footer,logoAlt,Infosys Logo,string
+

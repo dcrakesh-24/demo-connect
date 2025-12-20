@@ -1,0 +1,102 @@
+section,field,value,type
+header,userName,Taylor,string
+header,logoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+header,logoAlt,Apple Logo,string
+header,backgroundColor,#FFFFFF,color
+header,textColor,#000000,color
+header,learnMoreButtonText,Learn more,string
+header,learnMoreButtonLink,https://www.apple.com/,string
+header,bookCallButtonText,Book a call,string
+header,bookCallButtonLink,#,string
+hero,primaryLogoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+hero,primaryLogoAlt,Apple Logo,string
+hero,secondaryLogoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+hero,secondaryLogoAlt,Apple Secondary Logo,string
+hero,greeting,"Hey Taylor, great to chat\nto you again yesterday,\nscroll down for next\nsteps!",string
+hero,description,Experience the innovation and quality that Apple brings to every product. Discover how our ecosystem can transform your workflow.,string
+hero,graphicImageUrl,https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=1200,string
+hero,backgroundColor,#000000,color
+hero,textColor,#FFFFFF,color
+hero,greetingFontSize,48px,string
+hero,greetingLineHeight,1.25,string
+hero,greetingFontFamily,SF Pro Display,string
+hero,greetingFontWeight,700,string
+usefulInfo,title,Useful Information,string
+usefulInfo,backgroundColor,#FFFFFF,color
+usefulInfo,textColor,#000000,color
+usefulInfo,card1_id,1,string
+usefulInfo,card1_title,iPhone Product Guide,string
+usefulInfo,card1_type,Most popular,string
+usefulInfo,card1_imageUrl,https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800&h=500&fit=crop,string
+usefulInfo,card1_label,iPhone Guide,string
+usefulInfo,card1_icon,📱,string
+usefulInfo,card2_id,2,string
+usefulInfo,card2_title,Apple Ecosystem Overview,string
+usefulInfo,card2_type,PDF,string
+usefulInfo,card2_imageUrl,https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=500&fit=crop,string
+usefulInfo,card2_label,Apple_Ecosystem.pdf,string
+usefulInfo,card2_icon,📄,string
+usefulInfo,card3_id,3,string
+usefulInfo,card3_title,Developer Resources,string
+usefulInfo,card3_type,Landing Page,string
+usefulInfo,card3_imageUrl,https://images.unsplash.com/photo-1512499617640-c2f999098c01?w=800&h=500&fit=crop,string
+usefulInfo,card3_label,Developer Portal,string
+usefulInfo,card3_icon,💻,string
+usefulInfo,card4_id,4,string
+usefulInfo,card4_title,Apple Services Guide,string
+usefulInfo,card4_type,PDF,string
+usefulInfo,card4_imageUrl,https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=500&fit=crop,string
+usefulInfo,card4_label,Apple_Services.pdf,string
+usefulInfo,card4_icon,📄,string
+usefulInfo,card5_id,5,string
+usefulInfo,card5_title,iPhone Product Overview,string
+usefulInfo,card5_type,Video,string
+usefulInfo,card5_imageUrl,https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=500&fit=crop,string
+usefulInfo,card5_label,iPhone Overview,string
+usefulInfo,card5_icon,▶,string
+usefulInfo,card6_id,6,string
+usefulInfo,card6_title,Case Study: Enterprise Success,string
+usefulInfo,card6_type,PDF,string
+usefulInfo,card6_imageUrl,https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=800&h=500&fit=crop,string
+usefulInfo,card6_label,Enterprise_Case_Study.pdf,string
+usefulInfo,card6_icon,📄,string
+usefulInfo,card7_id,7,string
+usefulInfo,card7_title,Getting Started with Apple Devices,string
+usefulInfo,card7_type,Document,string
+usefulInfo,card7_imageUrl,https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=500&fit=crop,string
+usefulInfo,card7_label,Getting Started Guide,string
+usefulInfo,card7_icon,📋,string
+usefulInfo,card8_id,8,string
+usefulInfo,card8_title,Developer API Documentation,string
+usefulInfo,card8_type,Document,string
+usefulInfo,card8_imageUrl,https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop,string
+usefulInfo,card8_label,API Documentation,string
+usefulInfo,card8_icon,🔧,string
+video,title,"Taylor, rewatch the demo here",string
+video,videoUrl,https://www.youtube.com/embed/dQw4w9WgXcQ,string
+video,backgroundColor,#F5F5F7,color
+video,textColor,#000000,color
+contact,name,Taylor Reed,string
+contact,title,CEO @ Apple,string
+contact,avatarUrl,https://api.dicebear.com/7.x/initials/svg?seed=TR,string
+calendar,title,"Taylor, if you need anything in the meantime feel free to book a call!",string
+calendar,timezone,Pacific Standard Time,string
+calendar,calendlyUrl,https://calendly.com/apple-meeting/30min,string
+calendar,primaryLogoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+calendar,primaryLogoAlt,Apple Logo,string
+calendar,secondaryLogoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+calendar,secondaryLogoAlt,Apple Secondary Logo,string
+calendar,backgroundColor,#007AFF,color
+calendar,textColor,#FFFFFF,color
+calendar,containerWidth,70%,string
+calendar,containerMinHeight,720px,string
+footer,backgroundColor,#F5F5F7,color
+footer,textColor,#1D1D1F,color
+footer,borderColor,#D2D2D7,color
+footer,copyright,© Copyright 2025 Apple Inc. All rights reserved.,string
+footer,termsLink,https://www.apple.com/legal/,string
+footer,privacyLink,https://www.apple.com/privacy/,string
+footer,cookieLink,https://www.apple.com/legal/privacy/cookies/,string
+footer,logoUrl,https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg,string
+footer,logoAlt,Apple Logo,string
+
